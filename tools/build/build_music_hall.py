@@ -17,6 +17,7 @@ PROJECT = Path(__file__).resolve().parents[2]
 OUTPUT = PROJECT / 'build' / 'music_hall'
 OFFSET = (29, 3, 40)
 OPPOSITE = {'north':'south','south':'north','east':'west','west':'east'}
+_MODULE_CACHE = {}
 
 
 def is_north(number):
@@ -147,6 +148,20 @@ def encode_structure(blocks, data_version):
 
 
 def load_modules():
+    """构建输入：11 个模块的实测方块。结果缓存，测试与审计重复调用时不再重算。"""
+    key = _module_cache_key()
+    if key not in _MODULE_CACHE:
+        _MODULE_CACHE[key] = _load_modules_uncached()
+    return _MODULE_CACHE[key]
+
+
+def _module_cache_key():
+    probe = PROJECT / 'nbt_export'
+    files = sorted(probe.glob('*.nbt'))
+    return tuple((p.name, p.stat().st_mtime_ns, p.stat().st_size) for p in files)
+
+
+def _load_modules_uncached():
     blocks={}; placement=[]
     for number in range(1,12):
         filename='module_01.nbt' if number==1 else f'departures_module_{number:02}.nbt'
