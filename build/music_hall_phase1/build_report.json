@@ -1,16 +1,16 @@
 {
   "status": "教堂外壳与全部连接已生成；已通过坐标、音符与上升沿模型核验，尚未在Minecraft实机播放验收。播放期间不要重复按启动键。",
   "offset": [
-    9,
+    15,
     1,
     50
   ],
   "size": [
-    61,
-    165,
-    175
+    73,
+    169,
+    187
   ],
-  "totalBlocks": 105833,
+  "totalBlocks": 142151,
   "noteBlocks": 2307,
   "coveredNotes": 0,
   "shellModuleCollisions": 0,
@@ -149,11 +149,11 @@
     "repeater": 3719,
     "blue_wool": 22,
     "stone_button": 11,
-    "smooth_stone": 10675,
-    "white_concrete": 46878,
-    "dark_prismarine": 9737,
-    "light_blue_stained_glass": 5375,
-    "smooth_quartz": 908
+    "smooth_stone": 13578,
+    "white_concrete": 80397,
+    "dark_prismarine": 11952,
+    "smooth_quartz": 3292,
+    "polished_andesite": 672
   },
   "byGroup": {
     "01": {
@@ -295,11 +295,11 @@
       "blue_wool": 2
     },
     "shell": {
-      "smooth_stone": 10675,
-      "white_concrete": 46878,
-      "dark_prismarine": 9737,
-      "light_blue_stained_glass": 5375,
-      "smooth_quartz": 908
+      "smooth_stone": 13578,
+      "white_concrete": 80397,
+      "dark_prismarine": 11952,
+      "smooth_quartz": 3292,
+      "polished_andesite": 672
     }
   },
   "controlOpenings": 0,
