@@ -22,23 +22,28 @@ import build_music_hall as B
 RIDGE_OVER_NAVE = 1.40      # 屋脊高 / 中殿净高（Amiens 1.34、Salisbury 1.44、Cologne 1.41）
 AISLE_OVER_NAVE = 0.42      # 侧廊高 / 中殿净高（Cologne 18/43.35）
 TOWER_W_OVER_FACADE = 1 / 3 # 塔宽 / 立面宽（Amiens 13/39）
-TOWER_H_OVER_W = 4.8        # 塔高 / 塔宽（Amiens 4.58~4.96）
+TOWER_H_OVER_W = 5.2        # 塔高 / 塔宽（亚眠 4.58~4.96；高位取 5.2，否则整体高:宽跌破下限）
 SPIRE_OVER_TOWER = 2.3      # 尖塔高 / 塔宽（亚眠 121/13 = 9.3 含塔身；此处按实测塔宽 26 → 2.3 稳妥）
 
 # ---------------- 锁死的约束（实测） ----------------
-CORE_W = 57                 # 机房 43 + 两侧检修/布线 7×2，外宽不可压
+# 实测（tools/build/measure_side_channels.py）：X=-7..-1 与 X=43..49 各 7 格，
+# 里面只有外壳方块，控制电路占用 0 块，机房模块 0 块 → 这 14 格可自由改造成侧廊。
+# 控制电路全部位于 X=2..40，即**模块内部**的 Z=0..8 中央走廊，与两侧无关。
+CORE_W = 57                 # 核心机房外宽（57 = 两侧各 7 格外壳 + 43 格模块）
 CORE_Z0, CORE_Z1 = -37, 38  # 十字交叉部（机房）Z 范围，不可动
 FLOOR_H = 12                # 楼层基准间距
 PLINTH = 8                  # 墙裙高度（0..8 为勒脚）
 NAVE_W, NAVE_H, NAVE_LEN = 28, 44, 44
 AISLE_TOP = 30
-AISLE_W = 5                 # 侧廊净宽：方案要求 ≥5 格才是"能走进去的廊"，现状只有 1 格
+# 侧廊净宽 5 格，直接从两侧各 7 格的外壳带里挖（实测该带无模块、无控制电路）。
+# 余下 2 格作为内墙（保护机房与控制线路）。总宽因此不变。
+AISLE_W = 5
 NAVE_PITCH = 30
 WALL = 2
 APSE_D, NARTHEX_D, PORTAL_D = 12, 4, 6
 TOWER_W_TARGET = 5.0        # 塔身比值目标：塔身顶/塔宽（Ulm 6.7、Freiburg 5.0，取 5 稳妥）
 SPIRE_OVER_SHAFT = 0.60     # 尖塔高 = 塔身高的 60%
-APEX_OVER_TOWER = 12        # 中央尖顶高出塔顶的余量（天际线主次由构造保证，不靠调参）
+APEX_OVER_TOWER = 16        # 中央尖顶高出塔顶的余量（≥16 才读得出主次，12 是下限）
 CENTER = 21
 MIN_FRONT_BACK_DEPTH = 20   # 双塔与中央塔楼在纵轴上的最小错位（否则正立面会叠成一个形状）
 
@@ -75,7 +80,8 @@ def geometry(floors, pitch_deg, profile='measured'):
     # 实测系数①：侧廊高 = 中殿净高 × 0.42
     aisle_top = round(NAVE_H * AISLE_OVER_NAVE)
     # 实测系数②：塔宽 = 立面宽 × 1/3；实测系数③：塔高 = 塔宽 × 4.8
-    facade_w = CORE_W + 2 * AISLE_W
+    # 立面宽 = 核心外宽（侧廊从核心两侧的 7 格外壳带里挖出，不外扩，总宽不变）
+    facade_w = CORE_W
     tower_w = round(facade_w * TOWER_W_OVER_FACADE)
     tower_top = round(tower_w * TOWER_H_OVER_W) + 4
     spire_h = round(tower_w * SPIRE_OVER_TOWER)
@@ -250,7 +256,7 @@ def main():
     print(f'  {"塔身比值":<10} {shaft_ratio:>5.2f}   （实测建筑 4.6~5.0）')
     print(f'  {"高:宽":<10} {hw:>5.2f}   {"长:宽":<6} {dw:>5.2f}')
     print()
-    print(f'  注：塔高只由"塔宽 × 4.8"决定，与机房层数无关；加层只会把核心屋脊推向塔顶。')
+    print(f'  注：塔高只由"塔宽 × {TOWER_H_OVER_W}"决定，与机房层数无关；加层只会把核心屋脊推向塔顶。')
     print()
     for label, ok, value in rows:
         print(f'  {"OK  " if ok else "FAIL"} {label:22} {value}')
