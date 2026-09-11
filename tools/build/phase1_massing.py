@@ -16,7 +16,8 @@ from plan_massing import CENTER
 CORE_EAVE = 69            # 机房顶 68 之上 1 格
 CORE_RIDGE = 89           # 35° 坡
 AISLE_TOP = 18            # 中殿净高 44 × 0.42
-TRANCEPT_TOP = 58         # 耳堂山墙顶，介于侧廊 18 与核心 89 之间
+TRANCEPT_EAVE = 80        # 耳堂檐口：必须高于核心檐口 69
+TRANCEPT_TOP = 104        # 耳堂脊顶：高于核心屋脊 89，才能在剪影上成形
 NAVE_H = 44
 NAVE_RIDGE = 52
 APSE_TOP = 34
@@ -111,18 +112,25 @@ def generate():
     slab(CORE_X0 + 2, CORE_X0 + 6, AISLE_TOP, AISLE_TOP, CORE_Z0, CORE_Z1, 'white_concrete')
     slab(CORE_X1 - 6, CORE_X1 - 2, AISLE_TOP, AISLE_TOP, CORE_Z0, CORE_Z1, 'white_concrete')
 
-    # ============ 4. 横向耳堂：向前后、向左右凸出，打碎核心大矩形 ============
+    # ============ 4. 横向耳堂：必须高于核心檐口，否则轮廓上不出现 ============
+    # 实测问题：上一版耳堂顶 58 < 核心檐口 69，在侧视与正视轮廓里几乎看不见。
+    # 现改为高于核心屋脊（89），并做出独立的双坡山墙，让它在两个方向的剪影里都成形。
     for xa, xb in ((TRANCEPT_X0, CORE_X0 - 1), (CORE_X1 + 1, TRANCEPT_X1)):
-        walls(xa, xb, TRANCEPT_Z0, TRANCEPT_Z1, TRANCEPT_TOP - 6, 'white_concrete')
-        # 山墙：沿 Z 向双坡，脊线在耳堂中段
+        walls(xa, xb, TRANCEPT_Z0, TRANCEPT_Z1, TRANCEPT_EAVE, 'white_concrete')
+        # 山墙：沿 Z 向双坡，脊线在耳堂中段，脊顶到 TRANCEPT_TOP
         mid = (TRANCEPT_Z0 + TRANCEPT_Z1) // 2
         span = max(1, (TRANCEPT_Z1 - TRANCEPT_Z0) // 2)
         for step in range(span + 1):
-            y = TRANCEPT_TOP - 6 + round(step * 6 / span)
+            y = TRANCEPT_EAVE + round(step * (TRANCEPT_TOP - TRANCEPT_EAVE) / span)
             for z in (mid - step, mid + step):
                 if TRANCEPT_Z0 <= z <= TRANCEPT_Z1:
                     for x in range(xa, xb + 1):
                         put(x, y, z, 'dark_prismarine')
+        # 耳堂端墙（南北两面），做出实体山墙而不是空壳
+        for z in (TRANCEPT_Z0, TRANCEPT_Z1):
+            for x in range(xa, xb + 1):
+                for y in range(0, TRANCEPT_EAVE + 1):
+                    put(x, y, z, 'white_concrete')
 
     # ============ 5. 中殿：外墙 + 坡屋顶 ============
     walls(NAVE_X_OUT0, NAVE_X_OUT1, NAVE_Z0, NAVE_Z1, NAVE_H, 'white_concrete')
@@ -147,7 +155,9 @@ def generate():
         walls(xa, xb, z, z, top, 'white_concrete')
         ring(xa, xb, z, z, top, 'dark_prismarine')
 
-    # ============ 7. 双塔：4 级明确收分 ============
+    # ============ 7. 双塔：5 级收分（解决"下半段偏素"） ============
+    # 实测问题：上一版 Y=0..40 是等截面的 19×19，立面过于平整。
+    # 现在把下半段拆成两级：勒脚台座（最宽）→ 塔身基座（收 2 格）→ 塔身 → 钟室 → 尖顶。
     for x0, apex in ((TOWER_WEST_X0, TOWER_WEST_APEX),
                      (TOWER_EAST_X1 - TOWER_W + 1, TOWER_EAST_APEX)):
         x1 = x0 + TOWER_W - 1
@@ -155,27 +165,37 @@ def generate():
         spire_h = 46
         belfry_top = apex - spire_h          # 钟室顶
         belfry_base = belfry_top - 26        # 钟室底
-        shaft_top = belfry_base - 12         # 下段塔身顶（束带层）
-        plinth_top = shaft_top - 26          # 塔基座顶
+        shaft_top = belfry_base - 12         # 塔身顶（束带层）
+        base_top = shaft_top - 34            # 塔身基座顶
+        podium_top = base_top - 18           # 勒脚台座顶
 
-        # —— 第 1 级：塔基座（最宽，带四角扶壁）——
-        walls(x0, x1, z0, z1, plinth_top, 'white_concrete')
+        # —— 第 1 级：勒脚台座（最宽，外扩 2 格，四角扶壁墩）——
+        pxa, pxb, pza, pzb = x0 - 2, x1 + 2, z0 - 2, z1 + 2
+        walls(pxa, pxb, pza, pzb, podium_top, 'white_concrete')
+        for cx in (pxa, pxb):
+            for cz in (pza, pzb):
+                for dx in (-1, 0, 1):
+                    for dz in (-1, 0, 1):
+                        for y in range(0, podium_top + 1):
+                            px, pz = cx + dx, cz + dz
+                            if pxa - 1 <= px <= pxb + 1 and pza - 1 <= pz <= pzb + 1:
+                                put(px, y, pz, 'polished_andesite')
+        # 台座压顶：外挑 1 格，形成明显的水平收分线
+        ring(pxa + 1, pxb - 1, pza + 1, pzb - 1, podium_top + 1, 'smooth_quartz')
+
+        # —— 第 2 级：塔身基座（收 2 格）——
+        walls(x0, x1, z0, z1, base_top, 'white_concrete')
         for cx in (x0, x1):
             for cz in (z0, z1):
-                for dy in range(0, 6):
-                    for dx in (-1, 0, 1):
-                        for dz in (-1, 0, 1):
-                            if 0 <= dx + 1 <= 2 and 0 <= dz + 1 <= 2:
-                                px, pz = cx + dx, cz + dz
-                                if x0 - 1 <= px <= x1 + 1 and z0 - 1 <= pz <= z1 + 1:
-                                    put(px, dy, pz, 'polished_andesite')
+                for y in range(podium_top + 2, base_top + 1):
+                    put(cx, y, cz, 'polished_andesite')
 
-        # —— 第 2 级：下段塔身（收进 1 格，四角留扶壁立柱）——
-        sx0, sx1, sz0, sz1 = x0 + 1, x1 - 1, z0 + 1, z1 - 1
+        # —— 第 3 级：塔身（再收 2 格，四角扶壁贯通）——
+        sx0, sx1, sz0, sz1 = x0 + 2, x1 - 2, z0 + 2, z1 - 2
         walls(sx0, sx1, sz0, sz1, shaft_top, 'white_concrete')
         for cx in (sx0, sx1):
             for cz in (sz0, sz1):
-                for y in range(plinth_top, shaft_top + 1):
+                for y in range(base_top, shaft_top + 1):
                     put(cx, y, cz, 'polished_andesite')
         # 束带层：外挑 1 格
         ring(sx0 - 1, sx1 + 1, sz0 - 1, sz1 + 1, shaft_top, 'smooth_quartz')
