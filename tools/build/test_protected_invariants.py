@@ -6,6 +6,7 @@
 本文件只读，改动建筑不会被它自动修正，它只负责报警。
 用法：python -m unittest test_protected_invariants   （在 tools/build 目录下）
 """
+import hashlib
 import sys
 import unittest
 from pathlib import Path
@@ -28,6 +29,9 @@ TOTAL_BLOCKS_BEFORE = 100349           # 外壳 + 模块（不含控制电路）
 # 实测：外壳有 4 处盖住控制红石粉，构建脚本靠"拆除检修开口"处理。
 # 位置一旦变化，检修开口清单必须同步更新，否则构筑出来的红石爬升会断。
 EXPECTED_APERTURE_DUST = [(10, 10, 4), (11, 34, 4), (32, 22, 3), (32, 46, 3)]
+# 控制器布线指纹（位置 + 方块种类 + 属性）。见 test_control_wiring_fingerprint_unchanged。
+EXPECTED_CONTROL_BLOCKS = 2756
+EXPECTED_CONTROL_SHA256 = '91b5cebc6bede3af58fd020ad398619ee21f91d2524195cf5cb785fc7576ab54'
 
 
 class ProtectedInvariants(unittest.TestCase):
@@ -86,6 +90,24 @@ class ProtectedInvariants(unittest.TestCase):
                          '乐谱零点变化 = 音乐会对不齐')
         self.assertEqual(len(self.connection_report['connections']), 10,
                          '启动链的段数变化')
+
+    def test_control_wiring_fingerprint_unchanged(self):
+        """控制器布线的整体指纹。
+
+        这条最重要的一点在于：`generate_connections(modules, transform, is_north)`
+        的入参里**没有外壳**，源码对 shell 零引用——所以外壳重构在数学上不可能改变布线。
+        本断言把这个不变式固定下来：任何一个控制方块的位置、方块种类或属性变了都会红。
+        """
+        rows = []
+        for (x, y, z), (name, props, _) in self.control.items():
+            prop_text = ','.join(f'{k}={v}' for k, v in sorted(props.items()))
+            rows.append(f'{x},{y},{z}|{name}|{prop_text}')
+        blob = '\n'.join(sorted(rows)).encode('utf-8')
+        digest = hashlib.sha256(blob).hexdigest()
+        self.assertEqual(digest, EXPECTED_CONTROL_SHA256,
+                         '控制器布线发生变化：位置、方块种类或属性被改动')
+        self.assertEqual(len(self.control), EXPECTED_CONTROL_BLOCKS,
+                         '控制器方块总数变化')
 
     def test_note_block_has_air_above(self):
         for position, state in self.modules.items():
