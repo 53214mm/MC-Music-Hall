@@ -14,10 +14,16 @@ from plan_massing import CENTER
 
 # ===================== 定稿标高 =====================
 CORE_EAVE = 69            # 机房顶 68 之上 1 格
+# 三层垂直分层（纯体块进退，不做装饰）：每层内收 2 格，产生两次明显落差
+TIER_OUT = 3              # 最低层比原核心面外扩的格数
+TIER_MID = 1              # 中层外皮
+TIER_STEP = TIER_OUT - TIER_MID
+TIER1_TOP = 22            # 低侧廊层顶
+TIER2_TOP = 50            # 主体墙层顶（再往上是高侧窗 / 屋顶基部，到 CORE_EAVE）
 CORE_RIDGE = 89           # 35° 坡
 AISLE_TOP = 18            # 中殿净高 44 × 0.42
-TRANCEPT_EAVE = 80        # 耳堂檐口：必须高于核心檐口 69
-TRANCEPT_TOP = 104        # 耳堂脊顶：高于核心屋脊 89，才能在剪影上成形
+TRANCEPT_EAVE = 62        # 耳堂檐口（低于核心檐口，不再靠抬高取胜）
+TRANCEPT_TOP = 89         # 耳堂脊顶 = 核心屋脊，两条脊线在交叉处汇成一条
 NAVE_H = 44
 NAVE_RIDGE = 52
 APSE_TOP = 34
@@ -43,8 +49,10 @@ TOWER_Z0 = NAVE_Z1 + 2                 # 118，与中殿南墙隔 1 格
 TOWER_Z1 = TOWER_Z0 + TOWER_D - 1      # 129
 
 TRANCEPT_X0, TRANCEPT_X1 = -13, 55     # 横向耳堂外皮（只在核心宽 57 内凸出，不撑大宽度）
-TRANCEPT_Z0 = CORE_Z0 + 4
-TRANCEPT_Z1 = CORE_Z1 - 4
+# 耳堂深度：上一版 68 格深，把核心侧面的三层台阶整个盖住了。
+# 改为 20 格深的「浅耳堂」，只包住中央交叉段，让台阶在其余长度上露出来。
+TRANCEPT_Z0 = -10
+TRANCEPT_Z1 = 9
 
 APSE_Z0 = CORE_Z0 - 12
 
@@ -101,16 +109,30 @@ def generate():
     # ============ 1. 地基 ============
     slab(TRANCEPT_X0 - 2, TRANCEPT_X1 + 2, -1, -1, APSE_Z0 - 1, TOWER_Z1 + 1, 'smooth_stone')
 
-    # ============ 2. 核心体块 ============
-    # 实测：机房占 X 0..42、Z -20..8，任何横向内墙都会压到模块，
-    # 所以核心只砌四周外墙 + 一面沿 Z 的双坡屋顶，靠屋面起伏与侧廊成层打碎体块。
-    # 外墙内收 3 格，避免与模块外缘（X 0 与 42）相撞。
-    walls(CORE_X0, CORE_X1, CORE_Z0, CORE_Z1, CORE_EAVE, 'white_concrete')
-    roof_z(CORE_X0, CORE_X1, CORE_Z0, CORE_Z1, CORE_EAVE, CORE_RIDGE)
+    # ============ 2. 核心体块：三层垂直分层（低侧廊 / 主体墙 / 高侧窗） ============
+    # 实测：机房占 X 0..42、Z -20..8，任何横向内墙都会压到模块。
+    # 分层只能做在**外表面**，用外台阶制造两次明显进退。
+    # 可用带宽：X -7..-1 只有 7 格；再往外 X -10..-8 实测同样只有外壳、无控制线路，
+    # 所以从 X=-10 起算，做出 2 格一台阶的三层轮廓。
+    west_w, west_m, west_t = CORE_X0 - TIER_OUT, CORE_X0 - TIER_MID, CORE_X0
+    east_w, east_m, east_t = CORE_X1 + TIER_OUT, CORE_X1 + TIER_MID, CORE_X1
 
-    # ============ 3. 侧廊：核心两侧成层（体块层级，不是装饰） ============
-    slab(CORE_X0 + 2, CORE_X0 + 6, AISLE_TOP, AISLE_TOP, CORE_Z0, CORE_Z1, 'white_concrete')
-    slab(CORE_X1 - 6, CORE_X1 - 2, AISLE_TOP, AISLE_TOP, CORE_Z0, CORE_Z1, 'white_concrete')
+    def tier_block(xa, xb, ytop):
+        """砌一个外层台阶：只砌朝外的墙与朝向机房的内墙，不封顶。"""
+        for y in range(0, ytop + 1):
+            ring(xa, xb, CORE_Z0, CORE_Z1, y, 'white_concrete')
+
+    # 第 1 层（最低，最外）：低侧廊
+    tier_block(west_w, west_m, TIER1_TOP)
+    tier_block(east_m, east_w, TIER1_TOP)
+    # 第 2 层（内收 TIER_STEP 格）：主体墙
+    tier_block(west_m, west_t, TIER2_TOP)
+    tier_block(east_t, east_m, TIER2_TOP)
+    # 第 3 层（再内收 TIER_STEP 格）：高侧窗 / 屋顶基部
+    walls(west_t, east_t, CORE_Z0, CORE_Z1, CORE_EAVE, 'white_concrete')
+    roof_z(west_t, east_t, CORE_Z0, CORE_Z1, CORE_EAVE, CORE_RIDGE)
+
+    # ============ 3. （侧廊层已并入第 2 节的三层台阶）
 
     # ============ 4. 横向耳堂：必须高于核心檐口，否则轮廓上不出现 ============
     # 实测问题：上一版耳堂顶 58 < 核心檐口 69，在侧视与正视轮廓里几乎看不见。
@@ -190,17 +212,27 @@ def generate():
                 for y in range(podium_top + 2, base_top + 1):
                     put(cx, y, cz, 'polished_andesite')
 
-        # —— 第 3 级：塔身（再收 2 格，四角扶壁贯通）——
+        # —— 第 3 级：塔身下段（收 2 格，四角扶壁贯通）——
         sx0, sx1, sz0, sz1 = x0 + 2, x1 - 2, z0 + 2, z1 - 2
-        walls(sx0, sx1, sz0, sz1, shaft_top, 'white_concrete')
+        stage1_top = base_top + 24
+        walls(sx0, sx1, sz0, sz1, stage1_top, 'white_concrete')
         for cx in (sx0, sx1):
             for cz in (sz0, sz1):
-                for y in range(base_top, shaft_top + 1):
+                for y in range(base_top, stage1_top + 1):
+                    put(cx, y, cz, 'polished_andesite')
+
+        # —— 第 4 级：塔身上段（中段再收 2 格，让远景也能读到层级）——
+        tx0, tx1, tz0, tz1 = sx0 + 2, sx1 - 2, sz0 + 2, sz1 - 2
+        ring(sx0 - 2, sx1 + 2, sz0 - 2, sz1 + 2, stage1_top + 1, 'smooth_quartz')  # 中段束带
+        walls(tx0, tx1, tz0, tz1, shaft_top, 'white_concrete')
+        for cx in (tx0, tx1):
+            for cz in (tz0, tz1):
+                for y in range(stage1_top + 2, shaft_top + 1):
                     put(cx, y, cz, 'polished_andesite')
         # 束带层：外挑 1 格
-        ring(sx0 - 1, sx1 + 1, sz0 - 1, sz1 + 1, shaft_top, 'smooth_quartz')
+        ring(tx0 - 1, tx1 + 1, tz0 - 1, tz1 + 1, shaft_top, 'smooth_quartz')
 
-        # —— 第 3 级：钟室（向外挑出，哥特钟楼的标志性轮廓）——
+        # —— 第 5 级：钟室（向外挑出，哥特钟楼的标志性轮廓）——
         bx0, bx1, bz0, bz1 = x0, x1, z0, z1
         for offset, y in ((1, belfry_base), (2, belfry_base + 1)):
             ring(max(bx0 - offset, x0 - 2), min(bx1 + offset, x1 + 2),
