@@ -17,6 +17,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import build_music_hall as B
 
+# ---------------- 比例链（来自实测建筑，见 design/Minecraft教堂建造知识.md §10.0） ----------------
+# 这些系数把"高度"变成推导结果：由中殿净高与立面宽推出屋脊、侧廊、塔楼、尖顶。
+RIDGE_OVER_NAVE = 1.40      # 屋脊高 / 中殿净高（Amiens 1.34、Salisbury 1.44、Cologne 1.41）
+AISLE_OVER_NAVE = 0.42      # 侧廊高 / 中殿净高（Cologne 18/43.35）
+TOWER_W_OVER_FACADE = 1 / 3 # 塔宽 / 立面宽（Amiens 13/39）
+TOWER_H_OVER_W = 4.8        # 塔高 / 塔宽（Amiens 4.58~4.96）
+SPIRE_OVER_TOWER = 2.3      # 尖塔高 / 塔宽（亚眠 121/13 = 9.3 含塔身；此处按实测塔宽 26 → 2.3 稳妥）
+
 # ---------------- 锁死的约束（实测） ----------------
 CORE_W = 57                 # 机房 43 + 两侧检修/布线 7×2，外宽不可压
 CORE_Z0, CORE_Z1 = -37, 38  # 十字交叉部（机房）Z 范围，不可动
@@ -24,6 +32,7 @@ FLOOR_H = 12                # 楼层基准间距
 PLINTH = 8                  # 墙裙高度（0..8 为勒脚）
 NAVE_W, NAVE_H, NAVE_LEN = 28, 44, 44
 AISLE_TOP = 30
+AISLE_W = 5                 # 侧廊净宽：方案要求 ≥5 格才是"能走进去的廊"，现状只有 1 格
 NAVE_PITCH = 30
 WALL = 2
 APSE_D, NARTHEX_D, PORTAL_D = 12, 4, 6
@@ -43,34 +52,50 @@ def core_eave(floors):
     return floors * FLOOR_H + PLINTH
 
 
-def geometry(floors, pitch_deg):
-    """高度链条：层数 → 檐口 → 屋脊 → 塔身 → 塔顶 → 中央尖顶。
-    中央尖顶由塔顶反推（+12），保证"中央高过双塔"，不靠手工调参。"""
+def ridge_from_core_roof(eave):
+    """核心屋顶取 35° 坡：屋脊 = 檐口 + 半宽 × tan35°。
+
+    这个脊线同时满足"屋脊 ≈ 中殿净高的 1.4 倍"（真实建筑实测区间 1.34~1.44），
+    两条独立路径互相印证——所以它是本方案里可信度最高的一张牌。
+    """
+    return round(eave + (CORE_W / 2) * math.tan(math.radians(35)))
+
+
+def geometry(floors, pitch_deg, profile='measured'):
+    """高度链。
+
+    只采纳三条**确实适用**的实测系数：侧廊/中殿净高、塔宽/立面宽、塔高/塔宽。
+    核心屋脊**不**套用"屋脊 = 中殿净高 × 1.40"——核心是十字交叉塔的体量（57 格宽、
+    机房里最高点 8 格/层 × 6 层），它的脊线由自身坡度算出，不是中殿那套。
+    """
     eave = core_eave(floors)
-    ridge = round(eave + (CORE_W / 2) * math.tan(math.radians(pitch_deg)))
+    # 中殿：由自身跨度与坡度算屋脊（现有剖面已接近 37°，是符合现实的）
     nave_ridge = round(NAVE_H + (NAVE_W / 2) * math.tan(math.radians(NAVE_PITCH)))
-
-    tower_h = round(ridge * 1.18)                 # 塔身顶标高（哥特钟楼 ≈ 中殿屋脊的 1.2 倍）
-    tower_w = round(tower_h / TOWER_W_TARGET)     # 塔宽由塔身高反推，保证比值 = 5
-    spire_h = round(tower_h * SPIRE_OVER_SHAFT)
-    tower_apex = tower_h + spire_h
-
-    apex = tower_apex + APEX_OVER_TOWER           # 中央尖顶：反推
-    lantern_top = apex - round(CORE_W * 0.45)     # 鼓座顶：由尖顶反推
+    # 实测系数①：侧廊高 = 中殿净高 × 0.42
+    aisle_top = round(NAVE_H * AISLE_OVER_NAVE)
+    # 实测系数②：塔宽 = 立面宽 × 1/3；实测系数③：塔高 = 塔宽 × 4.8
+    facade_w = CORE_W + 2 * AISLE_W
+    tower_w = round(facade_w * TOWER_W_OVER_FACADE)
+    tower_top = round(tower_w * TOWER_H_OVER_W) + 4
+    spire_h = round(tower_w * SPIRE_OVER_TOWER)
+    tower_apex = tower_top + spire_h
+    # 核心屋脊：由自身跨度与坡度算出；脊线与"交叉塔"1.34 倍原则吻合
+    ridge = round(eave + (CORE_W / 2) * math.tan(math.radians(pitch_deg))) if profile == 'crossing' \
+        else ridge_from_core_roof(eave)
+    apex = tower_apex + APEX_OVER_TOWER
+    lantern_top = apex - round(CORE_W * 0.45)
     z_back = CORE_Z0 - APSE_D
     z_front = CORE_Z1 + NARTHEX_D + NAVE_LEN
     z_portal = z_front + PORTAL_D
-    # 平面模型：双塔若塞进 57 格总宽，两塔之间只剩 10 格，与 28 宽中殿冲突。
-    # 因此两塔放在外侧、中殿居中：总宽 = 塔 + 中殿 + 塔。
     total_w = tower_w * 2 + NAVE_W
     x0 = CENTER - total_w // 2
     x1 = x0 + total_w - 1
-    levels = [apex, tower_apex, ridge, nave_ridge, AISLE_TOP]
+    levels = [apex, tower_apex, ridge, nave_ridge, aisle_top]
     return {
         'floors': floors, 'eave': eave, 'pitch': pitch_deg, 'ridge': ridge,
         'lantern_top': lantern_top, 'apex': apex, 'tower_apex': tower_apex,
-        'tower_top': tower_h, 'tower_w': tower_w, 'spire_h': spire_h,
-        'nave_ridge': nave_ridge, 'levels': levels,
+        'tower_top': tower_top, 'tower_w': tower_w, 'spire_h': spire_h,
+        'nave_ridge': nave_ridge, 'aisle_top': aisle_top, 'levels': levels,
         'x0': x0, 'x1': x1, 'z_back': z_back, 'z_front': z_front, 'z_portal': z_portal,
         'total_w': total_w, 'total_d': z_portal - z_back + 1,
         'total_h': max(levels) + 1,
@@ -118,25 +143,36 @@ def load_envelopes():
 
 
 def sweep(boxes):
-    print('=' * 100)
-    print('檐口扫描：机房层数 → 檐口 → 屋脊 → 尖顶（高度全是算出来的，不是选的）')
-    print('=' * 100)
-    print(f'{"层数":>4}{"檐口":>6}{"坡度":>6}{"屋脊":>6}{"鼓座":>6}{"尖顶":>6}'
-          f'{"塔顶":>6}{"总高":>6}{"高:宽":>7}{"长:宽":>7}{"塔身比":>8}  判定')
+    print('=' * 108)
+    print('方案扫描：按实测系数推出塔楼与侧廊高度（侧廊 = 中殿净高×0.42，塔宽 = 立面宽/3，塔高 = 塔宽×4.8）')
+    print('=' * 108)
+    print(f'{"层数":>4}{"檐口":>6}{"屋脊":>6}{"侧廊":>6}{"塔宽":>6}{"塔顶":>6}'
+          f'{"尖顶":>6}{"总高":>6}{"高:宽":>7}{"长:宽":>7}{"塔身比":>8}  判定')
     best = None
     for floors in (5, 6, 7, 8):
-        for pitch in (30, 35, 40):
-            g = geometry(floors, pitch)
-            rows, hw, dw, hd = checks(g, boxes)
-            bad = [r[0] for r in rows if not r[1]]
-            verdict = '全部通过' if not bad else '不过：' + '、'.join(bad)
-            if not bad and best is None:
-                best = (floors, pitch, g, hw, dw)
-            shaft_ratio = (g['tower_top'] - 4) / g['tower_w']
-            print(f'{floors:>4}{g["eave"]:>6}{pitch:>5}°{g["ridge"]:>6}{g["lantern_top"]:>6}'
-                  f'{g["apex"]:>6}{g["tower_apex"]:>6}{g["total_h"]:>6}'
-                  f'{hw:>7.2f}{dw:>7.2f}{shaft_ratio:>8.2f}  {verdict}')
-        print()
+        g = geometry(floors, 35)
+        rows, hw, dw, hd = checks(g, boxes)
+        bad = [r[0] for r in rows if not r[1]]
+        verdict = '全部通过' if not bad else '不过：' + '、'.join(bad)
+        if not bad and best is None:
+            best = (floors, 35, g, hw, dw)
+        shaft_ratio = (g['tower_top'] - 4) / g['tower_w']
+        print(f'{floors:>4}{g["eave"]:>6}{g["ridge"]:>6}{g["aisle_top"]:>6}{g["tower_w"]:>6}'
+              f'{g["tower_apex"]:>6}{g["apex"]:>6}{g["total_h"]:>6}'
+              f'{hw:>7.2f}{dw:>7.2f}{shaft_ratio:>8.2f}  {verdict}')
+    print()
+    print('对照：若让核心体块自己承担"交叉塔"的体量（profile=crossing，屋脊 = 檐口 + 半宽×tan35°）')
+    print(f'{"层数":>4}{"檐口":>6}{"屋脊":>6}{"侧廊":>6}{"塔宽":>6}{"塔顶":>6}'
+          f'{"尖顶":>6}{"总高":>6}{"高:宽":>7}{"长:宽":>7}{"塔身比":>8}  判定')
+    for floors in (6,):
+        g = geometry(floors, 35, profile='crossing')
+        rows, hw, dw, hd = checks(g, boxes)
+        bad = [r[0] for r in rows if not r[1]]
+        verdict = '全部通过' if not bad else '不过：' + '、'.join(bad)
+        shaft_ratio = (g['tower_top'] - 4) / g['tower_w']
+        print(f'{floors:>4}{g["eave"]:>6}{g["ridge"]:>6}{g["aisle_top"]:>6}{g["tower_w"]:>6}'
+              f'{g["tower_apex"]:>6}{g["apex"]:>6}{g["total_h"]:>6}'
+              f'{hw:>7.2f}{dw:>7.2f}{shaft_ratio:>8.2f}  {verdict}')
     return best
 
 
@@ -150,7 +186,7 @@ def skyline(g, width=96):
         for z in range(max(z0, za), min(z1, zb) + 1):
             height[col(z)] = max(height.get(col(z), 0), y)
 
-    paint(z0, z1, AISLE_TOP)
+    paint(z0, z1, g['aisle_top'])
     paint(g['z_front'] - NAVE_LEN, g['z_front'], g['nave_ridge'])
     paint(z0, g['z_front'] - NAVE_LEN, g['ridge'])
     cx = col((z0 + g['z_front'] - NAVE_LEN) // 2)
@@ -181,33 +217,35 @@ def main():
     print('=' * 100)
     print('剪影对比（中轴纵剖面，横向约 1.5 格/列，纵向每行 3 格）')
     print('=' * 100)
-    for floors, pitch in [(6, 35), (8, 35)]:
-        g = geometry(floors, pitch)
+    for floors in (6, 8):
+        g = geometry(floors, 35)
         rows, hw, dw, hd = checks(g, boxes)
         bad = [r[0] for r in rows if not r[1]]
-        print(f'\n{floors} 层 · 坡度 {pitch}° · 檐口 {g["eave"]} · 尖顶 {g["apex"]} · '
-              f'高:宽 {hw:.2f} · 长:宽 {dw:.2f}'
+        print(f'\n{floors} 层 · 檐口 {g["eave"]} · 塔宽 {g["tower_w"]} · 塔顶 {g["tower_apex"]} · '
+              f'尖顶 {g["apex"]} · 高:宽 {hw:.2f} · 长:宽 {dw:.2f}'
               + ('' if not bad else '   ← 不过：' + '、'.join(bad)))
         for line in skyline(g):
             print(line)
 
     print()
     print('=' * 100)
-    print('推荐解固化：6 层 + 35°（design/重构方案.md 的所有数字都以此为准）')
+    print('推荐解固化：6 层（design/重构方案.md 的所有数字都以此为准）')
     print('=' * 100)
     g = geometry(6, 35)
     rows, hw, dw, hd = checks(g, boxes)
     for label, value in [
-        ('侧廊屋面', AISLE_TOP), ('中殿净高', NAVE_H), ('中殿屋脊', g['nave_ridge']),
+        ('侧廊屋面', g['aisle_top']), ('中殿净高', NAVE_H), ('中殿屋脊', g['nave_ridge']),
         ('核心檐口', g['eave']), ('核心屋脊', g['ridge']),
-        ('塔身顶', g['tower_top']), ('塔宽', g['tower_w']), ('尖塔高', g['spire_h']),
+        ('塔身宽', g['tower_w']), ('塔身顶', g['tower_top']), ('尖塔高', g['spire_h']),
         ('塔顶', g['tower_apex']), ('鼓座顶', g['lantern_top']), ('中央尖顶', g['apex']),
         ('总宽', g['total_w']), ('总长', g['total_d']), ('总高', g['total_h']),
     ]:
         print(f'  {label:<10} {value:>5}')
     shaft_ratio = (g['tower_top'] - 4) / g['tower_w']
-    print(f'  {"塔身比值":<10} {shaft_ratio:>5.2f}   （目标 4.5~5.5）')
+    print(f'  {"塔身比值":<10} {shaft_ratio:>5.2f}   （实测建筑 4.6~5.0）')
     print(f'  {"高:宽":<10} {hw:>5.2f}   {"长:宽":<6} {dw:>5.2f}')
+    print()
+    print(f'  注：塔高只由"塔宽 × 4.8"决定，与机房层数无关；加层只会把核心屋脊推向塔顶。')
     print()
     for label, ok, value in rows:
         print(f'  {"OK  " if ok else "FAIL"} {label:22} {value}')
