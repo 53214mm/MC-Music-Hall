@@ -40,6 +40,7 @@ TOWER_W_TARGET = 5.0        # 塔身比值目标：塔身顶/塔宽（Ulm 6.7、
 SPIRE_OVER_SHAFT = 0.60     # 尖塔高 = 塔身高的 60%
 APEX_OVER_TOWER = 12        # 中央尖顶高出塔顶的余量（天际线主次由构造保证，不靠调参）
 CENTER = 21
+MIN_FRONT_BACK_DEPTH = 20   # 双塔与中央塔楼在纵轴上的最小错位（否则正立面会叠成一个形状）
 
 # 现实对照（Amiens 大教堂实测，用于校准比例区间）
 REAL = {'h_over_w': 2.90, 'w_over_d': 0.31, 'h_over_d': 0.89}
@@ -119,11 +120,15 @@ def checks(g, boxes):
     # 竖向压倒横向的目标由 高:宽 保证，所以这里报数值但不作为失败项。
     dw_ok = True
     shaft_ratio = (g['tower_top'] - 4) / g['tower_w']
+    # 双塔与"中央塔楼"在纵轴上的错位：双塔在南端门楼，中央塔在核心体块中部
+    front_back = NAVE_LEN + NARTHEX_D * 2
     return [
         ('高:宽 落在现实区间', hw_ok, f"{hw:.2f}（Amiens 2.90）"),
         ('长:宽（软指标，仅供参考）', dw_ok, f"{dw:.2f}（现实 3~3.5；本项目平面偏方）"),
         ('塔身比值 4.5~5.5', 4.5 <= shaft_ratio <= 5.5, f"{shaft_ratio:.2f}"),
         ('五层轮廓有序且间距≥12', separated, f"间距 {gaps}"),
+        ('双塔与中央塔错位 ≥20', front_back >= MIN_FRONT_BACK_DEPTH,
+         f"{front_back} 格（中殿 {NAVE_LEN} + 前廊 {NARTHEX_D}×2）"),
         ('连续无分割长度受控', runs_ok, '已计入老虎窗'),
         ('11 模块全被体块包住', not escapees, f"越界 {escapees or '无'}"),
     ], hw, dw, hd

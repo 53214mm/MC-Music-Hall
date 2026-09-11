@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
 
-# 诊断脚本每次运行重新生成的留档，不入库
+# 诊断/试算脚本每次运行重新生成的留档，不入库
 build/music_hall/diagnose_church.txt
+build/music_hall/massing_preview.txt
