@@ -30,14 +30,18 @@ nbt_export/      OpenNBS 导出的模块结构（构建输入，11 个）
   └─ departures_module_02..11.nbt
 
 build/           生成的施工产物
-  └─ music_hall/
-      ├─ 水晶音乐馆施工图.html      逐层施工图 + 轴测预览 + 材料表（总入口）
-      ├─ 材料表.md                  外壳 / 连接 / 模块分列的材料清单
-      ├─ build_report.json          方块总数、放置参数、时序核验结果
-      ├─ connection_report.json     10 段启动链的延迟预算与路由路径
-      ├─ tile_manifest.json         分块结构文件的偏移表
-      ├─ structure_tiles/           52 个分块 NBT，供结构方块导入（合计 103029 方块）
-      └─ music_hall_reference.nbt   合并参考件；超过单个结构方块加载上限，仅供比对
+  ├─ music_hall/         现有教堂（基准版）
+  │   ├─ 水晶音乐馆施工图.html      逐层施工图 + 轴测预览 + 材料表（总入口）
+  │   ├─ 材料表.md                  外壳 / 连接 / 模块分列的材料清单
+  │   ├─ build_report.json          方块总数、放置参数、时序核验结果
+  │   ├─ connection_report.json     10 段启动链的延迟预算与路由路径
+  │   ├─ tile_manifest.json         分块结构文件的偏移表
+  │   ├─ structure_tiles/           52 个分块 NBT，供结构方块导入（合计 103029 方块）
+  │   └─ music_hall_reference.nbt   合并参考件；超过单个结构方块加载上限，仅供比对
+  └─ music_hall_phase1/  阶段 1「总体体块」（待实机验收）
+      ├─ 预览图_东南向.png / 预览图_西南向.png   三向投影预览
+      ├─ 水晶音乐馆施工图.html      逐层施工图（同款查看器）
+      └─ structure_tiles/           分块 NBT，供结构方块导入
 
 tools/           全部脚本
   ├─ verify_all.py              一条命令跑完全部核验

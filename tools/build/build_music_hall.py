@@ -179,10 +179,23 @@ def _load_modules_uncached():
     return blocks,placement
 
 
-def main():
+def main(argv=None):
+    import argparse
+    parser = argparse.ArgumentParser(description='生成教堂外壳 + 空间模块装配')
+    parser.add_argument('--phase1', action='store_true',
+                        help='用阶段 1 的总体体块（tools/build/phase1_massing.py）替换现有外壳')
+    parser.add_argument('--out', default=None, help='输出目录，默认 build/music_hall')
+    args = parser.parse_args(argv)
+
     from hall_connections import generate_connections,verify_rising_signal
-    OUTPUT.mkdir(parents=True,exist_ok=True)
-    modules,placement=load_modules(); shell=make_shell()
+    output = OUTPUT if args.out is None else (PROJECT / args.out)
+    output.mkdir(parents=True,exist_ok=True)
+    modules,placement=load_modules()
+    if args.phase1:
+        import phase1_massing
+        shell=phase1_massing.generate()
+    else:
+        shell=make_shell()
     control,connection_report=generate_connections(modules,transform,is_north)
     signal_report=verify_rising_signal(modules,control,transform)
     # Reserve service apertures around wiring, preserving electrical headroom.
@@ -205,50 +218,52 @@ def main():
     for (x,y,z),(name,_,_) in modules.items():
         if name=='note_block' and (x,y+1,z) in merged:
             raise ValueError(f'Covered note block {(x,y,z)}')
-    normalized={tuple(p[i]+OFFSET[i] for i in range(3)):s for p,s in merged.items()}
+    # 偏移改为按实际最小坐标自动计算：阶段 1 的外壳向南北两端都变大了，写死偏移会出现负坐标。
+    offset=tuple(-min(p[i] for p in merged) for i in range(3))
+    normalized={tuple(p[i]+offset[i] for i in range(3)):s for p,s in merged.items()}
     # 1519 is the source version; selected shell blocks all existed in 1.13 except
     # amethyst/smooth_quartz. Use the target runtime version when supplied by its version.json.
     version_file=PROJECT/'design'/'target_version.json'
     if not version_file.exists(): raise ValueError('Missing verified target_version.json')
     version=json.loads(version_file.read_text(encoding='utf-8'))['world_version']
     # Unified NBT is an interchange/reference file, too large for a single structure-block load.
-    (OUTPUT/'music_hall_reference.nbt').write_bytes(gzip.compress(encode_structure(normalized,version)))
+    (output/'music_hall_reference.nbt').write_bytes(gzip.compress(encode_structure(normalized,version)))
     chunks=defaultdict(dict)
     for pos,state in normalized.items():
         tile=tuple(v//32 for v in pos); local=tuple(v%32 for v in pos)
         chunks[tile][local]=state
-    chunk_dir=OUTPUT/'structure_tiles'; chunk_dir.mkdir(exist_ok=True)
+    chunk_dir=output/'structure_tiles'; chunk_dir.mkdir(exist_ok=True)
     manifest=[]
     for tile,bs in sorted(chunks.items()):
         name='hall_'+'_'.join(f'{v:02}' for v in tile)
         (chunk_dir/(name+'.nbt')).write_bytes(gzip.compress(encode_structure(bs,version)))
         manifest.append({'file':name+'.nbt','offset':[v*32 for v in tile],'blocks':len(bs)})
-    (OUTPUT/'tile_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+    (output/'tile_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     groups=defaultdict(Counter)
     for name,_,group in merged.values(): groups[group][name]+=1
     total=Counter()
     for counts in groups.values(): total.update(counts)
-    report={'status':'教堂外壳与全部连接已生成；已通过坐标、音符与上升沿模型核验，尚未在Minecraft实机播放验收。播放期间不要重复按启动键。','offset':OFFSET,
+    report={'status':'教堂外壳与全部连接已生成；已通过坐标、音符与上升沿模型核验，尚未在Minecraft实机播放验收。播放期间不要重复按启动键。','offset':offset,
             'size':[max(p[i] for p in normalized)+1 for i in range(3)],'totalBlocks':len(merged),
             'noteBlocks':total['note_block'],'coveredNotes':0,'shellModuleCollisions':0,
             'placement':placement,'materials':dict(total),'byGroup':{g:dict(c) for g,c in groups.items()},
             'controlOpenings':len(removed_shell),'signalVerification':signal_report}
-    (OUTPUT/'build_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-    (OUTPUT/'connection_report.json').write_text(json.dumps(connection_report,ensure_ascii=False,indent=2),encoding='utf-8')
+    (output/'build_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    (output/'connection_report.json').write_text(json.dumps(connection_report,ensure_ascii=False,indent=2),encoding='utf-8')
     lines=['# 水晶教堂材料表（外壳+音乐模块+连接线路）','',f'总方块数：{len(merged)}。原模块的11块版权告示牌未复制；02—11原正面按钮替换为输入中继器，侧面另加测试按钮。','',
            '| 方块ID | 总数量 | 组+余数（每组64） | 外壳用量 | 连接用量 |','|---|---:|---|---:|---:|']
     for name,count in sorted(total.items(),key=lambda p:-p[1]):
         lines.append(f'| {name} | {count} | {count//64}组+{count%64} | {groups["shell"][name]} | {groups["control"][name]} |')
-    (OUTPUT/'材料表.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    (output/'材料表.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     palette=[]; ix={}; compact=[]
     for pos,(name,props,group) in sorted(normalized.items()):
         key=(name,tuple(sorted(props.items())),group)
         if key not in ix:
             ix[key]=len(palette);palette.append([name,props,group])
         compact.append([*pos,ix[key]])
-    payload={'size':report['size'],'offset':OFFSET,'palette':palette,'blocks':compact,'report':report}
+    payload={'size':report['size'],'offset':offset,'palette':palette,'blocks':compact,'report':report}
     template=(Path(__file__).resolve().parent/'music_hall_viewer.html').read_text(encoding='utf-8')
-    (OUTPUT/'水晶音乐馆施工图.html').write_text(template.replace('__DATA__',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')),encoding='utf-8')
+    (output/'水晶音乐馆施工图.html').write_text(template.replace('__DATA__',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')),encoding='utf-8')
     print(json.dumps({k:report[k] for k in ['size','totalBlocks','noteBlocks','coveredNotes','shellModuleCollisions']},ensure_ascii=False))
 
 

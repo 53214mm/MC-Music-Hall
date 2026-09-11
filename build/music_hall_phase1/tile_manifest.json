@@ -1,0 +1,380 @@
+[
+  {
+    "file": "hall_00_00_00.nbt",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "blocks": 8977
+  },
+  {
+    "file": "hall_00_00_01.nbt",
+    "offset": [
+      0,
+      0,
+      32
+    ],
+    "blocks": 7071
+  },
+  {
+    "file": "hall_00_00_02.nbt",
+    "offset": [
+      0,
+      0,
+      64
+    ],
+    "blocks": 7325
+  },
+  {
+    "file": "hall_00_00_03.nbt",
+    "offset": [
+      0,
+      0,
+      96
+    ],
+    "blocks": 2432
+  },
+  {
+    "file": "hall_00_00_04.nbt",
+    "offset": [
+      0,
+      0,
+      128
+    ],
+    "blocks": 2432
+  },
+  {
+    "file": "hall_00_00_05.nbt",
+    "offset": [
+      0,
+      0,
+      160
+    ],
+    "blocks": 3236
+  },
+  {
+    "file": "hall_00_01_00.nbt",
+    "offset": [
+      0,
+      32,
+      0
+    ],
+    "blocks": 2969
+  },
+  {
+    "file": "hall_00_01_01.nbt",
+    "offset": [
+      0,
+      32,
+      32
+    ],
+    "blocks": 4734
+  },
+  {
+    "file": "hall_00_01_02.nbt",
+    "offset": [
+      0,
+      32,
+      64
+    ],
+    "blocks": 4279
+  },
+  {
+    "file": "hall_00_01_03.nbt",
+    "offset": [
+      0,
+      32,
+      96
+    ],
+    "blocks": 928
+  },
+  {
+    "file": "hall_00_01_04.nbt",
+    "offset": [
+      0,
+      32,
+      128
+    ],
+    "blocks": 928
+  },
+  {
+    "file": "hall_00_01_05.nbt",
+    "offset": [
+      0,
+      32,
+      160
+    ],
+    "blocks": 2049
+  },
+  {
+    "file": "hall_00_02_00.nbt",
+    "offset": [
+      0,
+      64,
+      0
+    ],
+    "blocks": 887
+  },
+  {
+    "file": "hall_00_02_01.nbt",
+    "offset": [
+      0,
+      64,
+      32
+    ],
+    "blocks": 1641
+  },
+  {
+    "file": "hall_00_02_02.nbt",
+    "offset": [
+      0,
+      64,
+      64
+    ],
+    "blocks": 1118
+  },
+  {
+    "file": "hall_00_02_05.nbt",
+    "offset": [
+      0,
+      64,
+      160
+    ],
+    "blocks": 1608
+  },
+  {
+    "file": "hall_00_03_01.nbt",
+    "offset": [
+      0,
+      96,
+      32
+    ],
+    "blocks": 2007
+  },
+  {
+    "file": "hall_00_03_05.nbt",
+    "offset": [
+      0,
+      96,
+      160
+    ],
+    "blocks": 253
+  },
+  {
+    "file": "hall_00_04_01.nbt",
+    "offset": [
+      0,
+      128,
+      32
+    ],
+    "blocks": 1029
+  },
+  {
+    "file": "hall_00_04_05.nbt",
+    "offset": [
+      0,
+      128,
+      160
+    ],
+    "blocks": 11
+  },
+  {
+    "file": "hall_00_05_01.nbt",
+    "offset": [
+      0,
+      160,
+      32
+    ],
+    "blocks": 32
+  },
+  {
+    "file": "hall_01_00_00.nbt",
+    "offset": [
+      32,
+      0,
+      0
+    ],
+    "blocks": 8312
+  },
+  {
+    "file": "hall_01_00_01.nbt",
+    "offset": [
+      32,
+      0,
+      32
+    ],
+    "blocks": 6533
+  },
+  {
+    "file": "hall_01_00_02.nbt",
+    "offset": [
+      32,
+      0,
+      64
+    ],
+    "blocks": 6251
+  },
+  {
+    "file": "hall_01_00_03.nbt",
+    "offset": [
+      32,
+      0,
+      96
+    ],
+    "blocks": 2304
+  },
+  {
+    "file": "hall_01_00_04.nbt",
+    "offset": [
+      32,
+      0,
+      128
+    ],
+    "blocks": 2304
+  },
+  {
+    "file": "hall_01_00_05.nbt",
+    "offset": [
+      32,
+      0,
+      160
+    ],
+    "blocks": 3025
+  },
+  {
+    "file": "hall_01_01_00.nbt",
+    "offset": [
+      32,
+      32,
+      0
+    ],
+    "blocks": 2851
+  },
+  {
+    "file": "hall_01_01_01.nbt",
+    "offset": [
+      32,
+      32,
+      32
+    ],
+    "blocks": 4586
+  },
+  {
+    "file": "hall_01_01_02.nbt",
+    "offset": [
+      32,
+      32,
+      64
+    ],
+    "blocks": 3412
+  },
+  {
+    "file": "hall_01_01_03.nbt",
+    "offset": [
+      32,
+      32,
+      96
+    ],
+    "blocks": 864
+  },
+  {
+    "file": "hall_01_01_04.nbt",
+    "offset": [
+      32,
+      32,
+      128
+    ],
+    "blocks": 864
+  },
+  {
+    "file": "hall_01_01_05.nbt",
+    "offset": [
+      32,
+      32,
+      160
+    ],
+    "blocks": 1991
+  },
+  {
+    "file": "hall_01_02_00.nbt",
+    "offset": [
+      32,
+      64,
+      0
+    ],
+    "blocks": 809
+  },
+  {
+    "file": "hall_01_02_01.nbt",
+    "offset": [
+      32,
+      64,
+      32
+    ],
+    "blocks": 1273
+  },
+  {
+    "file": "hall_01_02_02.nbt",
+    "offset": [
+      32,
+      64,
+      64
+    ],
+    "blocks": 1007
+  },
+  {
+    "file": "hall_01_02_05.nbt",
+    "offset": [
+      32,
+      64,
+      160
+    ],
+    "blocks": 1472
+  },
+  {
+    "file": "hall_01_03_01.nbt",
+    "offset": [
+      32,
+      96,
+      32
+    ],
+    "blocks": 857
+  },
+  {
+    "file": "hall_01_03_05.nbt",
+    "offset": [
+      32,
+      96,
+      160
+    ],
+    "blocks": 839
+  },
+  {
+    "file": "hall_01_04_01.nbt",
+    "offset": [
+      32,
+      128,
+      32
+    ],
+    "blocks": 311
+  },
+  {
+    "file": "hall_01_04_05.nbt",
+    "offset": [
+      32,
+      128,
+      160
+    ],
+    "blocks": 21
+  },
+  {
+    "file": "hall_01_05_01.nbt",
+    "offset": [
+      32,
+      160,
+      32
+    ],
+    "blocks": 1
+  }
+]

@@ -33,7 +33,7 @@ CORE_W = 57                 # 核心机房外宽（57 = 两侧各 7 格外壳 + 
 CORE_Z0, CORE_Z1 = -37, 38  # 十字交叉部（机房）Z 范围，不可动
 FLOOR_H = 12                # 楼层基准间距
 PLINTH = 8                  # 墙裙高度（0..8 为勒脚）
-NAVE_W, NAVE_H, NAVE_LEN = 28, 44, 44
+NAVE_W, NAVE_H, NAVE_LEN = 28, 44, 76
 AISLE_TOP = 30
 # 侧廊净宽 5 格，直接从两侧各 7 格的外壳带里挖（实测该带无模块、无控制电路）。
 # 余下 2 格作为内墙（保护机房与控制线路）。总宽因此不变。
@@ -122,15 +122,15 @@ def checks(g, boxes):
                 if not (g['x0'] <= bx0 and bx1 <= g['x1'] and g['z_back'] <= bz0
                         and bz1 <= g['z_front'] and by1 < g['eave'])]
     hw_ok = 2.40 <= hw <= 3.60        # Amiens 2.90 的 ±20%
-    # 长:宽 是软指标：本项目受机房尺寸限制，平面天生偏"方"（如 Sainte-Chapelle 也短于 Amiens）。
-    # 竖向压倒横向的目标由 高:宽 保证，所以这里报数值但不作为失败项。
-    dw_ok = True
+    # 长:宽 上界按真实亚眠核对后放开：亚眠平面 145×70 m、总高 112.5 m
+    # → 长:宽 2.07、高:宽 1.61，真实哥特本就比"3~3.5"更接近方形。
+    dw_ok = 2.40 <= dw <= 3.60
     shaft_ratio = (g['tower_top'] - 4) / g['tower_w']
     # 双塔与"中央塔楼"在纵轴上的错位：双塔在南端门楼，中央塔在核心体块中部
     front_back = NAVE_LEN + NARTHEX_D * 2
     return [
         ('高:宽 落在现实区间', hw_ok, f"{hw:.2f}（Amiens 2.90）"),
-        ('长:宽（软指标，仅供参考）', dw_ok, f"{dw:.2f}（现实 3~3.5；本项目平面偏方）"),
+        ('长:宽 落在现实区间', dw_ok, f"{dw:.2f}（亚眠同口径 2.07，上界放在 3.60）"),
         ('塔身比值 4.5~5.5', 4.5 <= shaft_ratio <= 5.5, f"{shaft_ratio:.2f}"),
         ('五层轮廓有序且间距≥12', separated, f"间距 {gaps}"),
         ('双塔与中央塔错位 ≥20', front_back >= MIN_FRONT_BACK_DEPTH,
