@@ -6,7 +6,7 @@ Current complete build: **V20**. This project arranges *Departures* into 11 reds
 
 ## Download and open the building manual
 
-1. Open the [V20 Release page](https://github.com/53214mm/MC-Music-Hall/releases/tag/v20.0.0) and download the attached `余响堡_V20完整施工包.zip`. This is the ready-to-use package, not GitHub's automatically generated “Source code” archive.
+1. Open the [V20 Release page](https://github.com/53214mm/MC-Music-Hall/releases/tag/v20.0.0) and download the attached `Echo-Castle-V20-Full-Build-Pack.zip`. This is the ready-to-use package, not GitHub's automatically generated “Source code” archive. The download uses an ASCII filename; the files inside retain their Chinese names.
 2. **Extract the entire ZIP**, then open `release_v20/余响堡_V20施工总册.html`. Keep all four accompanying images; do not download the HTML alone.
 3. In “开始与定位” (Start and placement), enter the same world origin for every builder, then start the first construction phase.
 

@@ -6,7 +6,7 @@
 
 ## 先下载，再打开施工总册
 
-1. 打开 [V20 Release 下载页](https://github.com/53214mm/MC-Music-Hall/releases/tag/v20.0.0)，下载附件 `余响堡_V20完整施工包.zip`，不是GitHub自动生成的“Source code”。
+1. 打开 [V20 Release 下载页](https://github.com/53214mm/MC-Music-Hall/releases/tag/v20.0.0)，下载附件 `Echo-Castle-V20-Full-Build-Pack.zip`，不是GitHub自动生成的“Source code”。GitHub下载附件使用英文名，解压后的总册仍是中文文件名。
 2. **完整解压**，打开 `release_v20/余响堡_V20施工总册.html`。不要只下载HTML，四张配图须一起保留。
 3. 在“开始与定位”填写全队共用的世界原点，再进入第一阶段施工。
 
