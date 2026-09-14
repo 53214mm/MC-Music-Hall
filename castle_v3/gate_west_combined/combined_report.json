@@ -1,0 +1,81 @@
+{
+  "size": [
+    94,
+    109,
+    200
+  ],
+  "designMin": [
+    -90,
+    -48,
+    -18
+  ],
+  "designMax": [
+    3,
+    60,
+    181
+  ],
+  "offset": [
+    90,
+    48,
+    18
+  ],
+  "totalBlocks": 127016,
+  "materials": {
+    "stone": 45333,
+    "andesite": 9877,
+    "tuff": 9316,
+    "stone_bricks": 44452,
+    "stone_brick_stairs": 786,
+    "stone_brick_wall": 769,
+    "polished_andesite": 1789,
+    "deepslate_tiles": 942,
+    "mossy_stone_bricks": 8638,
+    "chiseled_stone_bricks": 28,
+    "iron_bars": 358,
+    "spruce_planks": 2205,
+    "spruce_slab": 28,
+    "spruce_stairs": 3,
+    "lantern": 12,
+    "barrel": 5,
+    "deepslate_brick_slab": 889,
+    "deepslate_tile_stairs": 1365,
+    "spruce_log": 129,
+    "bookshelf": 81,
+    "ladder": 11
+  },
+  "terrainMaterials": {
+    "stone": 45333,
+    "andesite": 9491,
+    "tuff": 9316
+  },
+  "buildingMaterials": {
+    "stone_bricks": 44452,
+    "stone_brick_stairs": 786,
+    "stone_brick_wall": 769,
+    "polished_andesite": 1789,
+    "deepslate_tiles": 942,
+    "mossy_stone_bricks": 8638,
+    "chiseled_stone_bricks": 28,
+    "iron_bars": 358,
+    "spruce_planks": 2205,
+    "spruce_slab": 28,
+    "spruce_stairs": 3,
+    "lantern": 12,
+    "barrel": 5,
+    "andesite": 386,
+    "deepslate_brick_slab": 889,
+    "deepslate_tile_stairs": 1365,
+    "spruce_log": 129,
+    "bookshelf": 81,
+    "ladder": 11
+  },
+  "routeCount": 17,
+  "status": "南门/岩岬/西翼合并施工样板，不是完整城堡；仅静态几何检查，未在游戏内实走。",
+  "integration": {
+    "sharedPositions": 69,
+    "westPreferredDifferences": 10,
+    "westBlocks": 26989,
+    "newUniqueBlocks": 100027,
+    "removedNewBlocksForExistingClearance": 5
+  }
+}

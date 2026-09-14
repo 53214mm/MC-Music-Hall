@@ -1,0 +1,174 @@
+{
+  "size": [
+    189,
+    170,
+    266
+  ],
+  "designMin": [
+    -90,
+    -48,
+    -84
+  ],
+  "designMax": [
+    98,
+    121,
+    181
+  ],
+  "offset": [
+    90,
+    48,
+    84
+  ],
+  "totalBlocks": 500843,
+  "noteBlocks": 2307,
+  "materials": {
+    "stone": 189692,
+    "tuff": 19924,
+    "stone_bricks": 223261,
+    "polished_andesite": 11069,
+    "mossy_stone_bricks": 8638,
+    "andesite": 9877,
+    "stone_brick_stairs": 1716,
+    "stone_brick_wall": 2054,
+    "iron_bars": 1533,
+    "deepslate_tiles": 8065,
+    "spruce_planks": 5935,
+    "deepslate_tile_stairs": 4663,
+    "light_blue_stained_glass": 1424,
+    "deepslate_brick_slab": 889,
+    "amethyst_block": 41,
+    "barrel": 17,
+    "lantern": 19,
+    "spruce_slab": 78,
+    "spruce_stairs": 20,
+    "dirt": 1803,
+    "stone_brick_slab": 32,
+    "bookshelf": 103,
+    "ladder": 157,
+    "sea_lantern": 40,
+    "chiseled_stone_bricks": 28,
+    "spruce_log": 129,
+    "note_block": 2307,
+    "packed_ice": 466,
+    "oak_planks": 78,
+    "redstone_wire": 2991,
+    "redstone_wall_torch": 42,
+    "repeater": 3719,
+    "blue_wool": 22,
+    "stone_button": 11
+  },
+  "terrainMaterials": {
+    "stone": 168905,
+    "tuff": 19924,
+    "andesite": 9491
+  },
+  "buildingMaterials": {
+    "stone_bricks": 223261,
+    "polished_andesite": 11069,
+    "mossy_stone_bricks": 8638,
+    "stone_brick_stairs": 1716,
+    "stone_brick_wall": 2054,
+    "iron_bars": 1533,
+    "deepslate_tiles": 8065,
+    "spruce_planks": 5935,
+    "deepslate_tile_stairs": 4663,
+    "light_blue_stained_glass": 1424,
+    "andesite": 386,
+    "deepslate_brick_slab": 889,
+    "amethyst_block": 41,
+    "barrel": 17,
+    "lantern": 19,
+    "spruce_slab": 78,
+    "spruce_stairs": 20,
+    "dirt": 1803,
+    "stone_brick_slab": 32,
+    "bookshelf": 103,
+    "ladder": 157,
+    "sea_lantern": 40,
+    "chiseled_stone_bricks": 28,
+    "spruce_log": 129,
+    "note_block": 2307,
+    "stone": 20787,
+    "packed_ice": 466,
+    "oak_planks": 78,
+    "redstone_wire": 2991,
+    "redstone_wall_torch": 42,
+    "repeater": 3719,
+    "blue_wool": 22,
+    "stone_button": 11
+  },
+  "routeCount": 32,
+  "roomCount": 8,
+  "musicShift": [
+    0,
+    -32,
+    0
+  ],
+  "relocatedMusicBlocks": 32260,
+  "preservedGateWestBlocks": 127016,
+  "blockedRoutes": [
+    {
+      "name": "前庭—收容长屋—厨房—西阶",
+      "reason": "旧西翼 y=0 步道占满 x=-50..-66、z=34..75 的通道，新路线在任意 Y 层都与旧实体相交；需先确定是否允许在上层跨越或另开洞口。"
+    },
+    {
+      "name": "回望悬桥—唱诗堂",
+      "reason": "起点 (-19,16,42) 及其附近格子被旧西翼实体占据，旧「藏谱下厅—回望悬桥」的终点并不落在空位上，接入点需要重定。"
+    },
+    {
+      "name": "空土庭返回前庭的常开环路",
+      "reason": "z=74 与 z=92/96 两段在 x=-11..-38 范围与旧屋体相交；实测 z=84、z=88 两条车道为空，可改走该处，但需把西翼终点一并移到同层（自 y=16 平台到 y=0 车道的下降段还缺一段合格楼梯）。"
+    },
+    {
+      "name": "东侧长廊—上升梯口 / 上升梯—机器顶面",
+      "reason": "新增上升梯的净空与既有「东侧长廊」端点在同一格共面，反复相交；要接通必须先指定谁让出该格，属需要人工决策的接口问题。"
+    },
+    {
+      "name": "藏谱上廊—北塔",
+      "reason": "旧「藏谱上廊环路」占满 x=-44..-22、z=-12..12 的 y=32 走廊，且档案塔在 y=32 整层实心、没有开口。要连通北塔必须先确认能否在塔身开洞。"
+    }
+  ],
+  "signal": {
+    "model": "rising-edge dust/repeater graph, not Minecraft runtime",
+    "receivedInputTicks": {
+      "1": 0,
+      "2": 320,
+      "3": 640,
+      "4": 960,
+      "5": 1280,
+      "6": 1600,
+      "7": 1920,
+      "8": 2240,
+      "9": 2560,
+      "10": 2880,
+      "11": 3202
+    },
+    "musicZeroTicks": {
+      "1": 7,
+      "2": 327,
+      "3": 647,
+      "4": 967,
+      "5": 1287,
+      "6": 1607,
+      "7": 1927,
+      "8": 2247,
+      "9": 2567,
+      "10": 2887,
+      "11": 3207
+    },
+    "expectedInputTicks": {
+      "1": 0,
+      "2": 320,
+      "3": 640,
+      "4": 960,
+      "5": 1280,
+      "6": 1600,
+      "7": 1920,
+      "8": 2240,
+      "9": 2560,
+      "10": 2880,
+      "11": 3202
+    }
+  },
+  "status": "全堡V3逐格模型：地形、外城、门楼、生活翼、唱诗堂、维修塔、厚石音乐主堡、四塔、游线与叙事家具已合并。音乐机整体平移(0,-32,0)，方块状态与相对位置未变。仅通过静态几何与数据检查；游戏内行走、光照、刷怪、防跌落与完整试听尚未验收。"
+}

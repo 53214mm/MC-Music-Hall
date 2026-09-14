@@ -1,0 +1,79 @@
+{
+  "fullModelBlocks": 520688,
+  "changedCoordinates": 237,
+  "added": 102,
+  "removed": 5,
+  "replaced": 130,
+  "musicBlocksPreserved": 32260,
+  "oldRoutesVerified": 35,
+  "newRoutesVerified": 5,
+  "interiorLoopUniquePoints": 30,
+  "interiorOpenings": 5,
+  "furnishingGroups": 14,
+  "exactViewerNeighborhoodBlocks": 1680,
+  "oldRouteProxySamples": 6331,
+  "oldRouteDimmerSamples": 0,
+  "newRouteMinima": [
+    7,
+    7,
+    9,
+    4,
+    8
+  ],
+  "sourceHashesVerified": 13,
+  "localReferencesChecked": 15,
+  "uniqueDOMIds": 18,
+  "images": [
+    {
+      "file": "01_长屋床位对照.png",
+      "size": [
+        2400,
+        1450
+      ],
+      "sha256": "a2153ff25b82c5c034ab193a9747a469ce9745e1b87445a4c9f80cfb98976484"
+    },
+    {
+      "file": "02_厨房内饰对照.png",
+      "size": [
+        2400,
+        1450
+      ],
+      "sha256": "174f6efe1a988360db833f0228d7e4fac180acdd39509229c97d6f30bc11c665"
+    },
+    {
+      "file": "03_下厅桌柜对照.png",
+      "size": [
+        2400,
+        1450
+      ],
+      "sha256": "0d4c2043490f7aed3821e8c84e62287f47fc8c0b97b03470c8a195ce01f6793c"
+    },
+    {
+      "file": "04_上廊书柜对照.png",
+      "size": [
+        2400,
+        1450
+      ],
+      "sha256": "caa8cc181bb7e191710507b75881bd67b5ff243cfc8221af35a670bb6152f37b"
+    },
+    {
+      "file": "05_藏谱上下层剖视.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "sha256": "a3862dba46c3a2be0bb85eee6971c072b1bb8d9ea3d07c794c255510435608c6"
+    },
+    {
+      "file": "06_室内通路定位.png",
+      "size": [
+        2600,
+        1540
+      ],
+      "sha256": "804cf4d5ce448a4d1c6bd668995c04c3e89bd17069b9b8c75c5eed320fc52b9a"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

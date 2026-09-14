@@ -1,0 +1,106 @@
+{
+  "note_blocks": 2307,
+  "support_blocks": {
+    "泥土": 1457,
+    "橡木木板": 384,
+    "浮冰": 466
+  },
+  "timing_repeaters_exact": 1475,
+  "placed_redstone_dust_reserve": 3754,
+  "raw_planks_for_note_blocks": 18456,
+  "raw_stone_for_repeaters": 4425,
+  "raw_sticks_for_repeaters": 2950,
+  "raw_redstone_dust_including_crafting_and_reserve": 10486,
+  "source_notes_transposed_one_octave": 5,
+  "merged_duplicate_triggers": 4,
+  "modules": [
+    {
+      "module": 1,
+      "length_ticks": 320,
+      "notes": 154,
+      "active_ticks": 99,
+      "max_chord": 5,
+      "repeaters": 120
+    },
+    {
+      "module": 2,
+      "length_ticks": 320,
+      "notes": 188,
+      "active_ticks": 102,
+      "max_chord": 6,
+      "repeaters": 124
+    },
+    {
+      "module": 3,
+      "length_ticks": 320,
+      "notes": 249,
+      "active_ticks": 122,
+      "max_chord": 7,
+      "repeaters": 136
+    },
+    {
+      "module": 4,
+      "length_ticks": 320,
+      "notes": 249,
+      "active_ticks": 141,
+      "max_chord": 5,
+      "repeaters": 151
+    },
+    {
+      "module": 5,
+      "length_ticks": 320,
+      "notes": 318,
+      "active_ticks": 145,
+      "max_chord": 6,
+      "repeaters": 149
+    },
+    {
+      "module": 6,
+      "length_ticks": 320,
+      "notes": 293,
+      "active_ticks": 136,
+      "max_chord": 8,
+      "repeaters": 153
+    },
+    {
+      "module": 7,
+      "length_ticks": 320,
+      "notes": 160,
+      "active_ticks": 86,
+      "max_chord": 7,
+      "repeaters": 122
+    },
+    {
+      "module": 8,
+      "length_ticks": 320,
+      "notes": 362,
+      "active_ticks": 172,
+      "max_chord": 6,
+      "repeaters": 183
+    },
+    {
+      "module": 9,
+      "length_ticks": 320,
+      "notes": 233,
+      "active_ticks": 128,
+      "max_chord": 6,
+      "repeaters": 160
+    },
+    {
+      "module": 10,
+      "length_ticks": 320,
+      "notes": 87,
+      "active_ticks": 50,
+      "max_chord": 5,
+      "repeaters": 104
+    },
+    {
+      "module": 11,
+      "length_ticks": 275,
+      "notes": 14,
+      "active_ticks": 10,
+      "max_chord": 3,
+      "repeaters": 73
+    }
+  ]
+}

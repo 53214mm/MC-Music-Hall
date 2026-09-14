@@ -1,0 +1,95 @@
+{
+  "totalBlocks": 521445,
+  "changedCoordinates": 293,
+  "added": 227,
+  "removed": 1,
+  "replaced": 65,
+  "musicPreserved": 32260,
+  "noteBlocks": 2307,
+  "oldOrdinaryRoutesPreserved": 48,
+  "oldGatedRoutesPreserved": 3,
+  "newRoutes": 5,
+  "flatSegmentsSwept": 95,
+  "newOneBlockStairTransitions": 9,
+  "newFeatures": 18,
+  "newArchitecturalLights": 11,
+  "totalArchitecturalLights": 539,
+  "oldRouteDimmerSamples": 0,
+  "newRouteMinimumLight": [
+    6,
+    4,
+    6,
+    8,
+    6
+  ],
+  "sightlinesChecked": 2,
+  "sightMethod": "exact segment versus conservative block AABBs; walls/fences 1.5 high",
+  "exactViewerNeighborhoodBlocks": 3261,
+  "sourceHashesVerified": 13,
+  "modelStatesChecked": 199,
+  "images": [
+    {
+      "file": "01_退水池西壁对照.png",
+      "size": [
+        2800,
+        1800
+      ],
+      "sha256": "f120a8dbb9282f1460791c34b1dd5b4b3c4986cd68e4e00f1a1bf38725617fc8"
+    },
+    {
+      "file": "02_进水口与检水角.png",
+      "size": [
+        2800,
+        1800
+      ],
+      "sha256": "452a5a93e4e0f0339e23ba55a15fccee15559234e5a50e8d1447c2bec9ae7462"
+    },
+    {
+      "file": "03_烽塔双折观景台.png",
+      "size": [
+        2800,
+        2100
+      ],
+      "sha256": "2d75cd89c5b76de30c40e5bfb1967c6831abc5285fb9ed637f9b344dda0ce443"
+    },
+    {
+      "file": "04_冠塔薄抄谱台.png",
+      "size": [
+        2700,
+        1900
+      ],
+      "sha256": "057ba1f41b1d7218b4121f29ae4b83e79d40a683210cec5c8aba01dd3ba7cd9d"
+    },
+    {
+      "file": "05_北阶塔换岗角.png",
+      "size": [
+        2700,
+        1800
+      ],
+      "sha256": "159af8908d06f96623f3f7d21b9a093a8f61d231427eb1587a87aa02abc611c0"
+    },
+    {
+      "file": "06_巡检阁与一阶接入.png",
+      "size": [
+        2800,
+        1950
+      ],
+      "sha256": "f9396508d6fcea1a9437afd3499ef5f5f760c294ec569c00c76fdf39c4652975"
+    },
+    {
+      "file": "07_守望位置与地标.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "sha256": "99b938e41f5fd89b7086d032339e1c589664b8347f8061d271d4445bd4c6e1fb"
+    }
+  ],
+  "referencesChecked": 17,
+  "uniqueDOMIds": 14,
+  "staticArtifactCheck": true,
+  "fullStairDynamics": false,
+  "browserTest": false,
+  "inGameTest": false,
+  "newNBT": false
+}

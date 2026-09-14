@@ -1,0 +1,9 @@
+{
+  "nonAirBlocks": 127016,
+  "airInclusiveCells": 2049200,
+  "tiles": 84,
+  "preservedOldWestBlocks": 26989,
+  "targetVersion": "26.3-snapshot-9",
+  "dataVersion": 5011,
+  "status": "NBT坐标、状态与空气精确回读一致；原西翼全部实体保留。网页只做脚本/数据检查，自动浏览器预览被本地URL安全策略阻止；未进行游戏内实测。"
+}

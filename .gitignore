@@ -1,6 +1,27 @@
+# Local Python caches and test caches
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
 
-# 诊断/试算脚本每次运行重新生成的留档，不入库
+# Local credentials, editor state, logs, and Minecraft runtime
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jar
+*.log
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Historical diagnostic output, not construction artifacts
 build/music_hall/diagnose_church.txt
 build/music_hall/massing_preview.txt

@@ -1,0 +1,9 @@
+{
+  "nonAirBlocks": 26989,
+  "checkedCellsIncludingAir": 336336,
+  "tiles": 24,
+  "targetVersion": "26.3-snapshot-9",
+  "dataVersion": 5011,
+  "routes": 8,
+  "result": "分块坐标/属性/空气精确回读一致；目标版本方块ID存在；未进行游戏内行走或自动状态更新验证。"
+}

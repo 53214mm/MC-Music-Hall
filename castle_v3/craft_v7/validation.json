@@ -1,0 +1,19 @@
+{
+  "target": "26.3-snapshot-9",
+  "samples": {
+    "window": 1496,
+    "dormer": 740,
+    "timber": 674
+  },
+  "existingCastleModified": false,
+  "musicModified": false,
+  "newNBT": false,
+  "inGameTest": false,
+  "browserTest": false,
+  "rendererLimitations": [
+    "UV lock omitted",
+    "no ambient occlusion/game light",
+    "first animation frame",
+    "no biome tint"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "fullModelBlocks": 518511,
+  "exactChangedCoordinates": 14342,
+  "coordinateAndPropertiesUnchanged": true,
+  "oneTopCellPerColumn": true,
+  "subsurfaceUnchanged": true,
+  "allV8ColorChangesPreserved": 83733,
+  "sourceHashesVerified": 15,
+  "localReferencesChecked": 9,
+  "uniqueDOMIds": 7,
+  "images": [
+    {
+      "file": "01_整堡南东地表对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "557fef0c98e3480ab987611ed09c95ffad4770e43c5074071b15500ed2e8a0d6"
+    },
+    {
+      "file": "02_整堡西南地表对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "61116bb13663bdf2869dfd1cdd48dab162e5fcd686f55b74811d3657b0495c46"
+    },
+    {
+      "file": "03_入口地表近景.png",
+      "size": [
+        2200,
+        1460
+      ],
+      "sha256": "060c68ab90819db2761650c1dd8cf9ded2140b8d4ee80dcbb8cc9ceee431b018"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

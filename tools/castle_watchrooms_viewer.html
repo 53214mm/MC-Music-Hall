@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>余响堡 · V17水痕与守望</title><style>__STYLE__</style></head><body><main>
+<header><p class="muted">余响堡 / V17 / 地下与高塔</p><h1>水退去了，塔上的灯还留着</h1><p>地下的潮痕、堵塞格栅与空检水盆，和塔上的抄谱桌、换岗短凳、巡检小台、守望椅各有用途。它们通过真实楼梯和已有环路相接，不把每间房重复装成同一个客厅。</p><p><a href="施工顺序与增量材料.md">搭法与增量物品 ↗</a>　<a href="../story_v16/余响堡_V16空席与守曲人工坊.html">回看V16唱诗堂与工坊 ↗</a>　<a href="先看这里.md">分享说明 ↗</a></p></header>
+<div class="cards"><div class="card">房间 / 构件<b>5处 / 18组</b></div><div class="card">旧普通路 / 新支路<b>48 + 5</b></div><div class="card">新增暖灯 / 总光源<b>11 / 539</b></div><div class="card">音乐音符盒保持<b>2,307</b></div></div>
+<p class="notice">图为实际原版方块模型绘制，不是游戏截图。地下无活动水，桶/讲台/炼药锅为空，椅子不能直接坐下。没有新红石机制、没有新版NBT，也未修改服务器或真实存档。</p>
+<h2>01 / 地下室不是均匀刷绿</h2><img class="hero" src="01_退水池西壁对照.png" alt="旧蓄水池西壁潮痕、堵塞进水格栅和检水角前后对照"><p>两道苔石砖只落在旧水位处；拱框内堵住的格栅、下面的低石屑和后来铺的小片木板，把供水与修补的先后关系留在墙边。原地下环路与回前庭的楼梯不动。</p>
+<h2>02 / 一处封堵，一处仍被使用的小角落</h2><img class="hero" src="02_进水口与检水角.png" alt="细柱倒楼梯拱框、铁格栅、半砖石屑，以及空检水盆的近景"><p>堵塞口背后仍是原实墙，不挖穿地基。检水盆用空炼药锅，旁边只有桶、短铜件和灯；没有用一片蓝玻璃假装地下水。</p>
+<h2>03 / 烽塔需要真正能望出去的位置</h2><img class="hero" src="03_烽塔双折观景台.png" alt="烽塔原露台与有真实梯步、立柱、横梁和低铁栏的木观景台对照"><p>原地板Y76偏低，新木梯分两折上到Y84。横桥在原登塔路线三格净空上方通过；平台有立柱与梁，楼梯下面有接木。原石城垛保持，一格高铁栏保留俯视角度，不能替换成更高的墙或栅栏。</p>
+<h2>04 / 冠塔：留下的不是另一间大图书馆</h2><img class="hero" src="04_冠塔薄抄谱台.png" alt="冠塔旧灯与书架保留，厚桌改薄台面和空谱架，书架外增加后补木框"><p>原灯与灯座保留，旧书架外加木框；薄台面、一张向桌的椅子与空谱架组成短支路尽头。普通书架纹理不是已经可读的曲谱文本。</p>
+<h2>05 / 北阶塔：给走阶的人停一下</h2><img class="hero" src="05_北阶塔换岗角.png" alt="北阶塔交通节点边的短凳、端灯、空挂具与行李桶"><p>只有一段短凳、空挂具和桶，不改成卧室。唯一新增栏杆口在四邻都有同高楼板的位置，旧交通节点仍能直通冠塔和烽塔。</p>
+<h2>06 / 维修塔：多一阶才算真的到达</h2><img class="hero" src="06_巡检阁与一阶接入.png" alt="维修塔巡检小台及Y54至Y55真实一阶接入的剖面"><p>从旧梯内侧Z13向东补一阶进入Y55塔板，Z14上方的旧塔墙和精修窗廊不拆。这里是小修台与向内堡的单席，和塔下大型维修工坊分工不同。</p>
+<h2>07 / 回望来路的模型证据</h2><img class="hero" src="07_守望位置与地标.png" alt="烽塔观景点、东门塔屋冠、唱诗堂屋脊及两条保守视线的平面定位"><p>登记观景点为设计地板(-57,84,-40)。按普通站姿计算，到东门塔屋冠与唱诗堂屋脊上方的保守占用格射线无阻挡；这是视线定位图，不是第一人称截图，不含服务器新建物和树木。静态铁栏/玻璃/楼梯按整格遮挡，没有靠透明纹理假装穿墙。</p>
+<p class="muted">配图按本机26.3-snapshot-9原版模型与纹理绘制。各图注明裁切范围，范围外仍有原城堡，不可照剖图拆墙。未模拟UV锁定、环境遮蔽、真实照明、所有连接更新或完整玩家动力学。</p>
+<h2>新增通路 / 照明代理</h2><table><thead><tr><th>新通路</th><th>采样点</th><th>最低照明代理</th></tr></thead><tbody id="routeRows"></tbody></table><p class="notice">旧48条普通路线和三条捷径没有照明代理变暗。新路最低6、4、6、8、6，无零值；不含天空光、反射或刷怪规则，必须在独立创造档检查真实夜间照明。</p>
+<h2>逐层施工 / 精确拆改</h2><p>先完成平台支撑与护挡，再摆家具。橙框表示相对V16的变化，包含拆成空气的格子。俯视X向右、Z向下；每格的朝向和世界坐标可以点击查看。</p>
+<div class="controls"><label>区域 <select id="view"></select></label><label>设计Y <input id="y" type="number" value="-11"></label><button id="down">下移一层</button><button id="up">上移一层</button></div><div class="controls"><span>服务器设计原点 O</span><label>X <input id="ox" type="number" value="0"></label><label>Y <input id="oy" type="number" value="0"></label><label>Z <input id="oz" type="number" value="0"></label></div>
+<p id="viewNote" class="muted"></p><p id="detail" class="detail">世界坐标=设计坐标+O，JSON offset仅用于文件索引，不另加一次。</p><div class="scroll"><div id="grid" class="grid"></div></div>
+<h2>本轮增量物品</h2><p id="materialNote"></p><table><thead><tr><th>物品</th><th>放置数量</th></tr></thead><tbody id="materials"></tbody></table><p>按已有V16计算；并非全堡总材料。桶不预填物品，活板门薄背需手动打开。拆下方块和仅调连接位置见<a href="材料增减.json">材料明细</a>。</p>
+<h2>交付与剩余工作</h2><p id="counts"></p><p>旧音乐、地表、外饰、48条普通路线与三机关保持；V16两处房间也保持。这一轮完成地下与四座主体塔的静态叙事场景。仍需全堡统一施工/采购/NBT包，以及游戏内全路线、夜间照明、三机关开关/保存重进、完整播放原曲的验收。</p>
+<details><summary>完整数据与保存文件检查</summary><p><a href="castle_v17.json">完整V17模型 ↗</a>　<a href="v17_changes.json">逐格差异 ↗</a>　<a href="房间通路与视线.json">构件/通路/视线 ↗</a>　<a href="照明代理.json">照明采样 ↗</a>　<a href="validation.json">数量与来源 ↗</a>　<a href="artifact_audit.json">保存文件审计 ↗</a></p></details><p class="muted">发整个watch_v17目录和七张PNG即可离线看，无需Python或联网。旧版链接需相应上级文件。HTML只做静态检查，未浏览器交互或游戏实测，未绕过本地自动访问限制。</p>
+</main><script>__SCRIPT__</script></body></html>

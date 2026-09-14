@@ -1,0 +1,338 @@
+[
+  {
+    "file": "west_0_0_0.nbt",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2509
+  },
+  {
+    "file": "west_0_0_1.nbt",
+    "offset": [
+      0,
+      0,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3145
+  },
+  {
+    "file": "west_0_0_2.nbt",
+    "offset": [
+      0,
+      0,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3183
+  },
+  {
+    "file": "west_0_0_3.nbt",
+    "offset": [
+      0,
+      0,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      2
+    ],
+    "solidBlocks": 76
+  },
+  {
+    "file": "west_0_1_0.nbt",
+    "offset": [
+      0,
+      32,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4295
+  },
+  {
+    "file": "west_0_1_1.nbt",
+    "offset": [
+      0,
+      32,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 954
+  },
+  {
+    "file": "west_0_1_2.nbt",
+    "offset": [
+      0,
+      32,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_0_1_3.nbt",
+    "offset": [
+      0,
+      32,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      2
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_0_2_0.nbt",
+    "offset": [
+      0,
+      64,
+      0
+    ],
+    "size": [
+      32,
+      2,
+      32
+    ],
+    "solidBlocks": 94
+  },
+  {
+    "file": "west_0_2_1.nbt",
+    "offset": [
+      0,
+      64,
+      32
+    ],
+    "size": [
+      32,
+      2,
+      32
+    ],
+    "solidBlocks": 15
+  },
+  {
+    "file": "west_0_2_2.nbt",
+    "offset": [
+      0,
+      64,
+      64
+    ],
+    "size": [
+      32,
+      2,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_0_2_3.nbt",
+    "offset": [
+      0,
+      64,
+      96
+    ],
+    "size": [
+      32,
+      2,
+      2
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_1_0_0.nbt",
+    "offset": [
+      32,
+      0,
+      0
+    ],
+    "size": [
+      20,
+      32,
+      32
+    ],
+    "solidBlocks": 1970
+  },
+  {
+    "file": "west_1_0_1.nbt",
+    "offset": [
+      32,
+      0,
+      32
+    ],
+    "size": [
+      20,
+      32,
+      32
+    ],
+    "solidBlocks": 2997
+  },
+  {
+    "file": "west_1_0_2.nbt",
+    "offset": [
+      32,
+      0,
+      64
+    ],
+    "size": [
+      20,
+      32,
+      32
+    ],
+    "solidBlocks": 3563
+  },
+  {
+    "file": "west_1_0_3.nbt",
+    "offset": [
+      32,
+      0,
+      96
+    ],
+    "size": [
+      20,
+      32,
+      2
+    ],
+    "solidBlocks": 68
+  },
+  {
+    "file": "west_1_1_0.nbt",
+    "offset": [
+      32,
+      32,
+      0
+    ],
+    "size": [
+      20,
+      32,
+      32
+    ],
+    "solidBlocks": 3185
+  },
+  {
+    "file": "west_1_1_1.nbt",
+    "offset": [
+      32,
+      32,
+      32
+    ],
+    "size": [
+      20,
+      32,
+      32
+    ],
+    "solidBlocks": 899
+  },
+  {
+    "file": "west_1_1_2.nbt",
+    "offset": [
+      32,
+      32,
+      64
+    ],
+    "size": [
+      20,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_1_1_3.nbt",
+    "offset": [
+      32,
+      32,
+      96
+    ],
+    "size": [
+      20,
+      32,
+      2
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_1_2_0.nbt",
+    "offset": [
+      32,
+      64,
+      0
+    ],
+    "size": [
+      20,
+      2,
+      32
+    ],
+    "solidBlocks": 31
+  },
+  {
+    "file": "west_1_2_1.nbt",
+    "offset": [
+      32,
+      64,
+      32
+    ],
+    "size": [
+      20,
+      2,
+      32
+    ],
+    "solidBlocks": 5
+  },
+  {
+    "file": "west_1_2_2.nbt",
+    "offset": [
+      32,
+      64,
+      64
+    ],
+    "size": [
+      20,
+      2,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "west_1_2_3.nbt",
+    "offset": [
+      32,
+      64,
+      96
+    ],
+    "size": [
+      20,
+      2,
+      2
+    ],
+    "solidBlocks": 0
+  }
+]

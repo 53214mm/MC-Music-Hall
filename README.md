@@ -1,100 +1,70 @@
-# Departures · 水晶教堂红石音乐馆
+# 余响堡 · Departures 红石音乐城堡
 
-把《Departures》做成 11 个模块的红石音乐机，装进一座白蓝水晶教堂外壳，并用独立的控制主线统一自动启动。
-目标运行版本：**Minecraft Java 26.3-snapshot-9**（见 `design/target_version.json`）。
+当前完整版本：**V20**。将《Departures》编排为11段红石音乐模块，置于带教堂、回廊、塔楼与地下维修道的城堡中。目标游戏版本为 Minecraft Java **26.3-snapshot-9**。
 
-**当前状态：结构与电路已全部生成并通过静态核验，但尚未在 Minecraft 实机播放验收。**
-播放期间不要重复按启动键。
+## 先下载，再打开施工总册
 
-## 目录结构
+1. 下载 [V20完整施工包 ZIP](https://github.com/53214mm/MC-Music-Hall/raw/refs/heads/main/castle_v3/%E4%BD%99%E5%93%8D%E5%A0%A1_V20%E5%AE%8C%E6%95%B4%E6%96%BD%E5%B7%A5%E5%8C%85.zip)。
+2. **完整解压**，打开 `release_v20/余响堡_V20施工总册.html`。不要只下载HTML，四张配图须一起保留。
+3. 在“开始与定位”填写全队共用的世界原点，再进入第一阶段施工。
 
-```
-design/          设计文档、目标版本、布局审计结果
-  ├─ 水晶音乐馆设计草案.md    空间方案、连接原则、施工与验证顺序（必读）
-  ├─ 启动时序核验.md          11 个模块的启动延迟推导与验证边界
-  ├─ target_version.json     目标游戏版本（构建脚本强制读取）
-  └─ layout_audit.json       各模块坐标/朝向/音符距离，由 audit_layout.py 生成
+查看和手建不需要安装Python，也不需要联网。GitHub文件页展示的是HTML源码，不是可操作的施工页面；请下载后用浏览器打开。
 
-plan_final/      钢琴 v3 正式乐谱（施工数据源）
-  ├─ departures_full_10tps.nbs          整首试听与总校验
-  ├─ departures_module_01..11.nbs       逐模块，在 OpenNBS 中导出结构
-  ├─ departures_note_schedule.csv       每个音符盒的时间、音高、垫块、右击次数
-  ├─ departures_timing_modules.csv      主时间线每段中继器的档位
-  ├─ departures_materials.json          精确逻辑材料统计
-  └─ README.md                          施工规则（由 build_departures_plan.py 生成）
+总册目录按用途整理为：开始与定位、施工工作台、音乐与机关、材料与分工、验收与NBT。
 
-plan_preview/    用户试听后选定的钢琴 v3 试听文件（与 plan_final 逐事件相同）
+## 施工图怎么用
 
-nbt_export/      OpenNBS 导出的模块结构（构建输入，11 个）
-  ├─ module_01.nbt
-  └─ departures_module_02..11.nbt
+- 全堡分六个施工阶段。每阶段先完成A批全部支撑，再建B批元件和挂件；每批按层高从低到高、同层依次分区。
+- 16×16网格是当前高度的俯视切片，上北下南、右东左西；小地图标明当前页在全堡的位置。
+- 只建标有“本步”的格子。点击格子查看世界坐标、中文材料和摆法；“参考”不在当前批次，“留空”不要填。
+- 一页核对后点击“本页核对完成并继续”。完成标记可以撤销、导出和合并，但不会自动检测游戏，也不会自动同步朋友的进度。
+- 特殊机关按专用初装流程操作，尤其S3：最终关闭态的活塞头不能直接手放。
 
-build/           生成的施工产物
-  ├─ music_hall/         现有教堂（基准版）
-  │   ├─ 水晶音乐馆施工图.html      逐层施工图 + 轴测预览 + 材料表（总入口）
-  │   ├─ 材料表.md                  外壳 / 连接 / 模块分列的材料清单
-  │   ├─ build_report.json          方块总数、放置参数、时序核验结果
-  │   ├─ connection_report.json     10 段启动链的延迟预算与路由路径
-  │   ├─ tile_manifest.json         分块结构文件的偏移表
-  │   ├─ structure_tiles/           52 个分块 NBT，供结构方块导入（合计 103029 方块）
-  │   └─ music_hall_reference.nbt   合并参考件；超过单个结构方块加载上限，仅供比对
-  └─ music_hall_phase1/  阶段 1「总体体块」（待实机验收）
-      ├─ 预览图_东南向.png / 预览图_西南向.png   三向投影预览
-      ├─ 水晶音乐馆施工图.html      逐层施工图（同款查看器）
-      └─ structure_tiles/           分块 NBT，供结构方块导入
+更详细的说明见 [施工方法与验收](castle_v3/release_v20/施工方法与验收.md)。
 
-tools/           全部脚本
-  ├─ verify_all.py              一条命令跑完全部核验
-  ├─ analyze_midi.py            只读分析 MIDI（音域、和弦、每 16 小节音符数）
-  ├─ build_departures_plan.py   生成 plan_final/ 全套 NBS 与 CSV
-  ├─ check_piano_final.py       校验 试听版 = 正式版 = 11 模块拼接
-  ├─ voicing_ab_record.py       历史记录：音色 A/B 试听的规则（已不可运行）
-  ├─ build/                     施工生成与审计
-  │   ├─ build_music_hall.py        主构建：变换、拼装、布线、出图（改这里）
-  │   ├─ church_shell.py            教堂外壳几何
-  │   ├─ hall_connections.py        控制主线路由与延迟预算
-  │   ├─ music_hall_viewer.html     施工图模板（占位符由构建脚本填充）
-  │   ├─ audit_export_timing.py     从 NBT 反推音符时刻，对比 CSV
-  │   ├─ audit_layout.py            模块放置审计（只读）
-  │   ├─ test_hall_builder.py       含"11 模块时序必须为 7+320×(i-1)"硬断言
-  │   └─ test_structure_bounds.py   NBT size 字段小于实际边界时的显示修正
-  └─ viewer/                    独立工具：NBT 逐层施工图查看器（可单独分享）
-      ├─ nbt_structure_to_json.py   NBT → JSON / 交互式 HTML
-      ├─ open-viewer.bat            把 .nbt 拖到它上面即可出图
-      └─ 使用说明.txt
-```
+## 这一版包含什么
 
-## 执行顺序
+V20已合并前版主墙、侧墙扶垛与凸窗、内饰、灯光、53条普通路线、3处捷径，以及11个音乐模块和10条连接线。不需要再叠加历史增量。
 
-```bash
-# 0. 全量核验（只读，约 40 秒）
-python tools/verify_all.py
+| 项目 | 当前完整数据 |
+| --- | ---: |
+| 非空气方块状态格 | 528,573 |
+| 成品物品 | 528,572件，88种 |
+| 建筑光源 | 543 |
+| 音符盒 | 2,307 |
+| 整体范围尺寸 | 189×170×267 |
+| NBT分块 | 324 |
 
-# 1. 改乐谱：需自备源 MIDI（.mid 不在本仓库内）
-python tools/analyze_midi.py path/to/departures.mid
-python tools/build_departures_plan.py path/to/departures.mid --output plan_final
-python tools/check_piano_final.py
+材料为成品数量，不含工具、临时脚手架、损耗和合成原料。详见 [全堡材料表](castle_v3/release_v20/全堡材料表.md)。
 
-# 2. 改建筑或电路：用 OpenNBS 把 plan_final/*.nbs 导出成 nbt_export/*.nbt，然后重建
-python tools/build/music_hall/build_music_hall.py
+## 验证边界与导入安全
 
-# 3. 看施工图：直接双击
-build/music_hall/水晶音乐馆施工图.html
-```
+已完成模型、材料、分页、支撑依赖及324个NBT的文件核验；网页脚本做过静态和DOM替身测试。配图是原版方块模型的离线渲染，**不是游戏截图，也没有完成真实浏览器或Minecraft实机验收**。
 
-## 施工顺序（详见 design/水晶音乐馆设计草案.md）
+NBT含 **8,050,137格空气**，可能清空目标范围内原有建筑和地形。只供已备份的独立空白创造测试世界使用，不要直接覆盖朋友服务器；手建不需要导入NBT。全路线实走、三机关开关与重进、夜间照明、11段及整曲试听仍须实测。
 
-1. 先搭 module_01 与 02 及一段控制主线试听，确认单模块完整。
-2. 实测 01—11 每个模块"输入→首音"的延迟，反推 L_i；模块 11 启动塔与其余不同，必须单独测。
-3. 校准全部时序，重点验证 01→02、05→06、10→11 三个接缝。
-4. 按设计稿定位六层模块，逐层验证；不先封外壳。
-5. 测试完整歌曲、重复启动锁、曲终复位。
-6. 最后完成外墙与穹顶，并复测音符盒上方空气与固定点音量。
+数据证据：[文件核验](castle_v3/release_v20/verification.json) · [整包哈希](castle_v3/release_v20/SHA256SUMS.json) · [项目验证记录](castle_v3/验证与进度.md)。
 
-## 注意事项
+## 项目目录
 
-- 各模块乐谱**开头带静音**（首音本地刻 29/3/1/2/1/0/1/4/2/1/14），因此外部输入到乐谱零点的延迟必须实机标定，不能假设 11 个模块相等。
-- 全部时序结论来自静态 NBT 与红石上升沿图模型，**没有做 Minecraft 仿真**；红石粉更新顺序、区块加载、脉冲宽度均未验证。
-- Java 中继器的 `facing` 指向**输入**侧：`east→输出西`、`west→输出东`、`north→输出南`、`south→输出北`。此规则只适用于中继器。
-- 音符盒顶部必须始终留空气；固定听音点设计坐标为 (21,32,3.5)，不是地板方块坐标。
-- 48 格是可听距离，不是均匀音量保证；广场与底层入口不保证听全曲。
+| 路径 | 用途 |
+| --- | --- |
+| `castle_v3/release_v20/` | 当前完整施工总册、模型、材料、配图和NBT |
+| `castle_v3/余响堡_V20完整施工包.zip` | 可直接发给朋友的完整离线包 |
+| `castle_v3/` 其他目录 | 旧版模型、阶段研究和回归验证来源，不作为当前施工入口 |
+| `departures_piano_final/` | 最终钢琴编排、NBS及音符/时间表 |
+| `nbt_save/` | 原音乐模块NBT，作为受保护输入 |
+| `tools/` | 城堡生成、逐格查看器、渲染和验证脚本 |
+| `design/` | 音乐时序、建筑参考和设计记录 |
+| `music_hall/`、`departures_redstone/`、其他试听目录 | 早期音乐馆与编排过程资料 |
+| `share_nbt_viewer/` | 可单独使用的NBT查看器工具 |
+
+当前目录结构替换了远程旧版的 `build/`、`plan_final/`、`plan_preview/`、`nbt_export/` 等入口；旧版本保留在Git提交历史中。
+
+## 开发与重建
+
+普通施工只需下载ZIP。生成或验证完整项目还需Python、Node.js、Pillow及本地目标版本Minecraft JAR；仓库不附带游戏JAR。部分历史脚本仍保留开发机器路径，不是跨电脑即装即用工具。
+
+重建前先检查 `tools/vanilla_mesh.py` 的 `JAR` 路径并指向自己的26.3-snapshot-9文件；不要把游戏运行文件上传到仓库。V20的主要脚本为 `build_castle_v20.py`、`render_castle_v20.py` 和 `verify_castle_v20.py`。最后一个会生成核验文件、校验清单和完整ZIP，并非纯只读命令。
+
+音乐及参考素材的原始署名资料保留在项目文件中；本仓库不声称拥有原曲或Minecraft素材的权利。

@@ -1,0 +1,17 @@
+{
+  "totalBlocks": 500843,
+  "size": [
+    189,
+    170,
+    266
+  ],
+  "tiles": 324,
+  "buildingBlocks": 302523,
+  "terrainBlocks": 198320,
+  "noteBlocks": 2307,
+  "routes": 32,
+  "rooms": 8,
+  "blockedRoutes": 5,
+  "materials": 34,
+  "cellsIncludingAir": 8546580
+}

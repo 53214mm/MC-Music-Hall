@@ -1,0 +1,4538 @@
+[
+  {
+    "file": "castle_0_0_0.nbt",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2074
+  },
+  {
+    "file": "castle_0_0_1.nbt",
+    "offset": [
+      0,
+      0,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3388
+  },
+  {
+    "file": "castle_0_0_2.nbt",
+    "offset": [
+      0,
+      0,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3646
+  },
+  {
+    "file": "castle_0_0_3.nbt",
+    "offset": [
+      0,
+      0,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3716
+  },
+  {
+    "file": "castle_0_0_4.nbt",
+    "offset": [
+      0,
+      0,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3744
+  },
+  {
+    "file": "castle_0_0_5.nbt",
+    "offset": [
+      0,
+      0,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 9032
+  },
+  {
+    "file": "castle_0_0_6.nbt",
+    "offset": [
+      0,
+      0,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4394
+  },
+  {
+    "file": "castle_0_0_7.nbt",
+    "offset": [
+      0,
+      0,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3656
+  },
+  {
+    "file": "castle_0_0_8.nbt",
+    "offset": [
+      0,
+      0,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 914
+  },
+  {
+    "file": "castle_0_1_0.nbt",
+    "offset": [
+      0,
+      32,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1320
+  },
+  {
+    "file": "castle_0_1_1.nbt",
+    "offset": [
+      0,
+      32,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5784
+  },
+  {
+    "file": "castle_0_1_2.nbt",
+    "offset": [
+      0,
+      32,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5192
+  },
+  {
+    "file": "castle_0_1_3.nbt",
+    "offset": [
+      0,
+      32,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6516
+  },
+  {
+    "file": "castle_0_1_4.nbt",
+    "offset": [
+      0,
+      32,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6289
+  },
+  {
+    "file": "castle_0_1_5.nbt",
+    "offset": [
+      0,
+      32,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6663
+  },
+  {
+    "file": "castle_0_1_6.nbt",
+    "offset": [
+      0,
+      32,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2595
+  },
+  {
+    "file": "castle_0_1_7.nbt",
+    "offset": [
+      0,
+      32,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 763
+  },
+  {
+    "file": "castle_0_1_8.nbt",
+    "offset": [
+      0,
+      32,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_2_0.nbt",
+    "offset": [
+      0,
+      64,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 36
+  },
+  {
+    "file": "castle_0_2_1.nbt",
+    "offset": [
+      0,
+      64,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1112
+  },
+  {
+    "file": "castle_0_2_2.nbt",
+    "offset": [
+      0,
+      64,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1146
+  },
+  {
+    "file": "castle_0_2_3.nbt",
+    "offset": [
+      0,
+      64,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 767
+  },
+  {
+    "file": "castle_0_2_4.nbt",
+    "offset": [
+      0,
+      64,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 350
+  },
+  {
+    "file": "castle_0_2_5.nbt",
+    "offset": [
+      0,
+      64,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 640
+  },
+  {
+    "file": "castle_0_2_6.nbt",
+    "offset": [
+      0,
+      64,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 104
+  },
+  {
+    "file": "castle_0_2_7.nbt",
+    "offset": [
+      0,
+      64,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_2_8.nbt",
+    "offset": [
+      0,
+      64,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_0.nbt",
+    "offset": [
+      0,
+      96,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_1.nbt",
+    "offset": [
+      0,
+      96,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 856
+  },
+  {
+    "file": "castle_0_3_2.nbt",
+    "offset": [
+      0,
+      96,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_3.nbt",
+    "offset": [
+      0,
+      96,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_4.nbt",
+    "offset": [
+      0,
+      96,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_5.nbt",
+    "offset": [
+      0,
+      96,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_6.nbt",
+    "offset": [
+      0,
+      96,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_7.nbt",
+    "offset": [
+      0,
+      96,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_3_8.nbt",
+    "offset": [
+      0,
+      96,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_0.nbt",
+    "offset": [
+      0,
+      128,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_1.nbt",
+    "offset": [
+      0,
+      128,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 68
+  },
+  {
+    "file": "castle_0_4_2.nbt",
+    "offset": [
+      0,
+      128,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_3.nbt",
+    "offset": [
+      0,
+      128,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_4.nbt",
+    "offset": [
+      0,
+      128,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_5.nbt",
+    "offset": [
+      0,
+      128,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_6.nbt",
+    "offset": [
+      0,
+      128,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_7.nbt",
+    "offset": [
+      0,
+      128,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_4_8.nbt",
+    "offset": [
+      0,
+      128,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_0.nbt",
+    "offset": [
+      0,
+      160,
+      0
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_1.nbt",
+    "offset": [
+      0,
+      160,
+      32
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_2.nbt",
+    "offset": [
+      0,
+      160,
+      64
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_3.nbt",
+    "offset": [
+      0,
+      160,
+      96
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_4.nbt",
+    "offset": [
+      0,
+      160,
+      128
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_5.nbt",
+    "offset": [
+      0,
+      160,
+      160
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_6.nbt",
+    "offset": [
+      0,
+      160,
+      192
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_7.nbt",
+    "offset": [
+      0,
+      160,
+      224
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_0_5_8.nbt",
+    "offset": [
+      0,
+      160,
+      256
+    ],
+    "size": [
+      32,
+      10,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_0_0.nbt",
+    "offset": [
+      32,
+      0,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3781
+  },
+  {
+    "file": "castle_1_0_1.nbt",
+    "offset": [
+      32,
+      0,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1024
+  },
+  {
+    "file": "castle_1_0_2.nbt",
+    "offset": [
+      32,
+      0,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1024
+  },
+  {
+    "file": "castle_1_0_3.nbt",
+    "offset": [
+      32,
+      0,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1024
+  },
+  {
+    "file": "castle_1_0_4.nbt",
+    "offset": [
+      32,
+      0,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1024
+  },
+  {
+    "file": "castle_1_0_5.nbt",
+    "offset": [
+      32,
+      0,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 10882
+  },
+  {
+    "file": "castle_1_0_6.nbt",
+    "offset": [
+      32,
+      0,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 8918
+  },
+  {
+    "file": "castle_1_0_7.nbt",
+    "offset": [
+      32,
+      0,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6415
+  },
+  {
+    "file": "castle_1_0_8.nbt",
+    "offset": [
+      32,
+      0,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 2717
+  },
+  {
+    "file": "castle_1_1_0.nbt",
+    "offset": [
+      32,
+      32,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6008
+  },
+  {
+    "file": "castle_1_1_1.nbt",
+    "offset": [
+      32,
+      32,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5216
+  },
+  {
+    "file": "castle_1_1_2.nbt",
+    "offset": [
+      32,
+      32,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1590
+  },
+  {
+    "file": "castle_1_1_3.nbt",
+    "offset": [
+      32,
+      32,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4530
+  },
+  {
+    "file": "castle_1_1_4.nbt",
+    "offset": [
+      32,
+      32,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5067
+  },
+  {
+    "file": "castle_1_1_5.nbt",
+    "offset": [
+      32,
+      32,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 9999
+  },
+  {
+    "file": "castle_1_1_6.nbt",
+    "offset": [
+      32,
+      32,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5659
+  },
+  {
+    "file": "castle_1_1_7.nbt",
+    "offset": [
+      32,
+      32,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1870
+  },
+  {
+    "file": "castle_1_1_8.nbt",
+    "offset": [
+      32,
+      32,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_2_0.nbt",
+    "offset": [
+      32,
+      64,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1000
+  },
+  {
+    "file": "castle_1_2_1.nbt",
+    "offset": [
+      32,
+      64,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4594
+  },
+  {
+    "file": "castle_1_2_2.nbt",
+    "offset": [
+      32,
+      64,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4802
+  },
+  {
+    "file": "castle_1_2_3.nbt",
+    "offset": [
+      32,
+      64,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2174
+  },
+  {
+    "file": "castle_1_2_4.nbt",
+    "offset": [
+      32,
+      64,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 311
+  },
+  {
+    "file": "castle_1_2_5.nbt",
+    "offset": [
+      32,
+      64,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2476
+  },
+  {
+    "file": "castle_1_2_6.nbt",
+    "offset": [
+      32,
+      64,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1104
+  },
+  {
+    "file": "castle_1_2_7.nbt",
+    "offset": [
+      32,
+      64,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_2_8.nbt",
+    "offset": [
+      32,
+      64,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_3_0.nbt",
+    "offset": [
+      32,
+      96,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 486
+  },
+  {
+    "file": "castle_1_3_1.nbt",
+    "offset": [
+      32,
+      96,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4748
+  },
+  {
+    "file": "castle_1_3_2.nbt",
+    "offset": [
+      32,
+      96,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 398
+  },
+  {
+    "file": "castle_1_3_3.nbt",
+    "offset": [
+      32,
+      96,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 111
+  },
+  {
+    "file": "castle_1_3_4.nbt",
+    "offset": [
+      32,
+      96,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_3_5.nbt",
+    "offset": [
+      32,
+      96,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 196
+  },
+  {
+    "file": "castle_1_3_6.nbt",
+    "offset": [
+      32,
+      96,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 98
+  },
+  {
+    "file": "castle_1_3_7.nbt",
+    "offset": [
+      32,
+      96,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_3_8.nbt",
+    "offset": [
+      32,
+      96,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_0.nbt",
+    "offset": [
+      32,
+      128,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 41
+  },
+  {
+    "file": "castle_1_4_1.nbt",
+    "offset": [
+      32,
+      128,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 199
+  },
+  {
+    "file": "castle_1_4_2.nbt",
+    "offset": [
+      32,
+      128,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_3.nbt",
+    "offset": [
+      32,
+      128,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_4.nbt",
+    "offset": [
+      32,
+      128,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_5.nbt",
+    "offset": [
+      32,
+      128,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_6.nbt",
+    "offset": [
+      32,
+      128,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_7.nbt",
+    "offset": [
+      32,
+      128,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_4_8.nbt",
+    "offset": [
+      32,
+      128,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_0.nbt",
+    "offset": [
+      32,
+      160,
+      0
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_1.nbt",
+    "offset": [
+      32,
+      160,
+      32
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_2.nbt",
+    "offset": [
+      32,
+      160,
+      64
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_3.nbt",
+    "offset": [
+      32,
+      160,
+      96
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_4.nbt",
+    "offset": [
+      32,
+      160,
+      128
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_5.nbt",
+    "offset": [
+      32,
+      160,
+      160
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_6.nbt",
+    "offset": [
+      32,
+      160,
+      192
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_7.nbt",
+    "offset": [
+      32,
+      160,
+      224
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_1_5_8.nbt",
+    "offset": [
+      32,
+      160,
+      256
+    ],
+    "size": [
+      32,
+      10,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_0_0.nbt",
+    "offset": [
+      64,
+      0,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3964
+  },
+  {
+    "file": "castle_2_0_1.nbt",
+    "offset": [
+      64,
+      0,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3735
+  },
+  {
+    "file": "castle_2_0_2.nbt",
+    "offset": [
+      64,
+      0,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4818
+  },
+  {
+    "file": "castle_2_0_3.nbt",
+    "offset": [
+      64,
+      0,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5092
+  },
+  {
+    "file": "castle_2_0_4.nbt",
+    "offset": [
+      64,
+      0,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1320
+  },
+  {
+    "file": "castle_2_0_5.nbt",
+    "offset": [
+      64,
+      0,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 9890
+  },
+  {
+    "file": "castle_2_0_6.nbt",
+    "offset": [
+      64,
+      0,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4220
+  },
+  {
+    "file": "castle_2_0_7.nbt",
+    "offset": [
+      64,
+      0,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3818
+  },
+  {
+    "file": "castle_2_0_8.nbt",
+    "offset": [
+      64,
+      0,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 862
+  },
+  {
+    "file": "castle_2_1_0.nbt",
+    "offset": [
+      64,
+      32,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6826
+  },
+  {
+    "file": "castle_2_1_1.nbt",
+    "offset": [
+      64,
+      32,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6532
+  },
+  {
+    "file": "castle_2_1_2.nbt",
+    "offset": [
+      64,
+      32,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5041
+  },
+  {
+    "file": "castle_2_1_3.nbt",
+    "offset": [
+      64,
+      32,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 7202
+  },
+  {
+    "file": "castle_2_1_4.nbt",
+    "offset": [
+      64,
+      32,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4808
+  },
+  {
+    "file": "castle_2_1_5.nbt",
+    "offset": [
+      64,
+      32,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 7041
+  },
+  {
+    "file": "castle_2_1_6.nbt",
+    "offset": [
+      64,
+      32,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2734
+  },
+  {
+    "file": "castle_2_1_7.nbt",
+    "offset": [
+      64,
+      32,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1564
+  },
+  {
+    "file": "castle_2_1_8.nbt",
+    "offset": [
+      64,
+      32,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_2_0.nbt",
+    "offset": [
+      64,
+      64,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1385
+  },
+  {
+    "file": "castle_2_2_1.nbt",
+    "offset": [
+      64,
+      64,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6057
+  },
+  {
+    "file": "castle_2_2_2.nbt",
+    "offset": [
+      64,
+      64,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6642
+  },
+  {
+    "file": "castle_2_2_3.nbt",
+    "offset": [
+      64,
+      64,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5189
+  },
+  {
+    "file": "castle_2_2_4.nbt",
+    "offset": [
+      64,
+      64,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3518
+  },
+  {
+    "file": "castle_2_2_5.nbt",
+    "offset": [
+      64,
+      64,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2521
+  },
+  {
+    "file": "castle_2_2_6.nbt",
+    "offset": [
+      64,
+      64,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 690
+  },
+  {
+    "file": "castle_2_2_7.nbt",
+    "offset": [
+      64,
+      64,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_2_8.nbt",
+    "offset": [
+      64,
+      64,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_3_0.nbt",
+    "offset": [
+      64,
+      96,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 639
+  },
+  {
+    "file": "castle_2_3_1.nbt",
+    "offset": [
+      64,
+      96,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3882
+  },
+  {
+    "file": "castle_2_3_2.nbt",
+    "offset": [
+      64,
+      96,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2761
+  },
+  {
+    "file": "castle_2_3_3.nbt",
+    "offset": [
+      64,
+      96,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 609
+  },
+  {
+    "file": "castle_2_3_4.nbt",
+    "offset": [
+      64,
+      96,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 378
+  },
+  {
+    "file": "castle_2_3_5.nbt",
+    "offset": [
+      64,
+      96,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 319
+  },
+  {
+    "file": "castle_2_3_6.nbt",
+    "offset": [
+      64,
+      96,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 71
+  },
+  {
+    "file": "castle_2_3_7.nbt",
+    "offset": [
+      64,
+      96,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_3_8.nbt",
+    "offset": [
+      64,
+      96,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_0.nbt",
+    "offset": [
+      64,
+      128,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_1.nbt",
+    "offset": [
+      64,
+      128,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2001
+  },
+  {
+    "file": "castle_2_4_2.nbt",
+    "offset": [
+      64,
+      128,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2415
+  },
+  {
+    "file": "castle_2_4_3.nbt",
+    "offset": [
+      64,
+      128,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_4.nbt",
+    "offset": [
+      64,
+      128,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_5.nbt",
+    "offset": [
+      64,
+      128,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_6.nbt",
+    "offset": [
+      64,
+      128,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_7.nbt",
+    "offset": [
+      64,
+      128,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_4_8.nbt",
+    "offset": [
+      64,
+      128,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_0.nbt",
+    "offset": [
+      64,
+      160,
+      0
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_1.nbt",
+    "offset": [
+      64,
+      160,
+      32
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 94
+  },
+  {
+    "file": "castle_2_5_2.nbt",
+    "offset": [
+      64,
+      160,
+      64
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 174
+  },
+  {
+    "file": "castle_2_5_3.nbt",
+    "offset": [
+      64,
+      160,
+      96
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_4.nbt",
+    "offset": [
+      64,
+      160,
+      128
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_5.nbt",
+    "offset": [
+      64,
+      160,
+      160
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_6.nbt",
+    "offset": [
+      64,
+      160,
+      192
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_7.nbt",
+    "offset": [
+      64,
+      160,
+      224
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_2_5_8.nbt",
+    "offset": [
+      64,
+      160,
+      256
+    ],
+    "size": [
+      32,
+      10,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_0_0.nbt",
+    "offset": [
+      96,
+      0,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3835
+  },
+  {
+    "file": "castle_3_0_1.nbt",
+    "offset": [
+      96,
+      0,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4557
+  },
+  {
+    "file": "castle_3_0_2.nbt",
+    "offset": [
+      96,
+      0,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 7336
+  },
+  {
+    "file": "castle_3_0_3.nbt",
+    "offset": [
+      96,
+      0,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 7204
+  },
+  {
+    "file": "castle_3_0_4.nbt",
+    "offset": [
+      96,
+      0,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1832
+  },
+  {
+    "file": "castle_3_0_5.nbt",
+    "offset": [
+      96,
+      0,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3740
+  },
+  {
+    "file": "castle_3_0_6.nbt",
+    "offset": [
+      96,
+      0,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_0_7.nbt",
+    "offset": [
+      96,
+      0,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_0_8.nbt",
+    "offset": [
+      96,
+      0,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_1_0.nbt",
+    "offset": [
+      96,
+      32,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5901
+  },
+  {
+    "file": "castle_3_1_1.nbt",
+    "offset": [
+      96,
+      32,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5616
+  },
+  {
+    "file": "castle_3_1_2.nbt",
+    "offset": [
+      96,
+      32,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6352
+  },
+  {
+    "file": "castle_3_1_3.nbt",
+    "offset": [
+      96,
+      32,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5796
+  },
+  {
+    "file": "castle_3_1_4.nbt",
+    "offset": [
+      96,
+      32,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4304
+  },
+  {
+    "file": "castle_3_1_5.nbt",
+    "offset": [
+      96,
+      32,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3220
+  },
+  {
+    "file": "castle_3_1_6.nbt",
+    "offset": [
+      96,
+      32,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_1_7.nbt",
+    "offset": [
+      96,
+      32,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_1_8.nbt",
+    "offset": [
+      96,
+      32,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_2_0.nbt",
+    "offset": [
+      96,
+      64,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 432
+  },
+  {
+    "file": "castle_3_2_1.nbt",
+    "offset": [
+      96,
+      64,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3612
+  },
+  {
+    "file": "castle_3_2_2.nbt",
+    "offset": [
+      96,
+      64,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2918
+  },
+  {
+    "file": "castle_3_2_3.nbt",
+    "offset": [
+      96,
+      64,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3046
+  },
+  {
+    "file": "castle_3_2_4.nbt",
+    "offset": [
+      96,
+      64,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4187
+  },
+  {
+    "file": "castle_3_2_5.nbt",
+    "offset": [
+      96,
+      64,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1762
+  },
+  {
+    "file": "castle_3_2_6.nbt",
+    "offset": [
+      96,
+      64,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_2_7.nbt",
+    "offset": [
+      96,
+      64,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_2_8.nbt",
+    "offset": [
+      96,
+      64,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_3_0.nbt",
+    "offset": [
+      96,
+      96,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_3_1.nbt",
+    "offset": [
+      96,
+      96,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1410
+  },
+  {
+    "file": "castle_3_3_2.nbt",
+    "offset": [
+      96,
+      96,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2734
+  },
+  {
+    "file": "castle_3_3_3.nbt",
+    "offset": [
+      96,
+      96,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1616
+  },
+  {
+    "file": "castle_3_3_4.nbt",
+    "offset": [
+      96,
+      96,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 489
+  },
+  {
+    "file": "castle_3_3_5.nbt",
+    "offset": [
+      96,
+      96,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 222
+  },
+  {
+    "file": "castle_3_3_6.nbt",
+    "offset": [
+      96,
+      96,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_3_7.nbt",
+    "offset": [
+      96,
+      96,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_3_8.nbt",
+    "offset": [
+      96,
+      96,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_0.nbt",
+    "offset": [
+      96,
+      128,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_1.nbt",
+    "offset": [
+      96,
+      128,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 739
+  },
+  {
+    "file": "castle_3_4_2.nbt",
+    "offset": [
+      96,
+      128,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1102
+  },
+  {
+    "file": "castle_3_4_3.nbt",
+    "offset": [
+      96,
+      128,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_4.nbt",
+    "offset": [
+      96,
+      128,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_5.nbt",
+    "offset": [
+      96,
+      128,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_6.nbt",
+    "offset": [
+      96,
+      128,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_7.nbt",
+    "offset": [
+      96,
+      128,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_4_8.nbt",
+    "offset": [
+      96,
+      128,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_0.nbt",
+    "offset": [
+      96,
+      160,
+      0
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_1.nbt",
+    "offset": [
+      96,
+      160,
+      32
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 9
+  },
+  {
+    "file": "castle_3_5_2.nbt",
+    "offset": [
+      96,
+      160,
+      64
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 24
+  },
+  {
+    "file": "castle_3_5_3.nbt",
+    "offset": [
+      96,
+      160,
+      96
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_4.nbt",
+    "offset": [
+      96,
+      160,
+      128
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_5.nbt",
+    "offset": [
+      96,
+      160,
+      160
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_6.nbt",
+    "offset": [
+      96,
+      160,
+      192
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_7.nbt",
+    "offset": [
+      96,
+      160,
+      224
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_3_5_8.nbt",
+    "offset": [
+      96,
+      160,
+      256
+    ],
+    "size": [
+      32,
+      10,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_0_0.nbt",
+    "offset": [
+      128,
+      0,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3677
+  },
+  {
+    "file": "castle_4_0_1.nbt",
+    "offset": [
+      128,
+      0,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4259
+  },
+  {
+    "file": "castle_4_0_2.nbt",
+    "offset": [
+      128,
+      0,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5138
+  },
+  {
+    "file": "castle_4_0_3.nbt",
+    "offset": [
+      128,
+      0,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5281
+  },
+  {
+    "file": "castle_4_0_4.nbt",
+    "offset": [
+      128,
+      0,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1340
+  },
+  {
+    "file": "castle_4_0_5.nbt",
+    "offset": [
+      128,
+      0,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3619
+  },
+  {
+    "file": "castle_4_0_6.nbt",
+    "offset": [
+      128,
+      0,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_0_7.nbt",
+    "offset": [
+      128,
+      0,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_0_8.nbt",
+    "offset": [
+      128,
+      0,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_1_0.nbt",
+    "offset": [
+      128,
+      32,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 4725
+  },
+  {
+    "file": "castle_4_1_1.nbt",
+    "offset": [
+      128,
+      32,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5901
+  },
+  {
+    "file": "castle_4_1_2.nbt",
+    "offset": [
+      128,
+      32,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6623
+  },
+  {
+    "file": "castle_4_1_3.nbt",
+    "offset": [
+      128,
+      32,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 7828
+  },
+  {
+    "file": "castle_4_1_4.nbt",
+    "offset": [
+      128,
+      32,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5371
+  },
+  {
+    "file": "castle_4_1_5.nbt",
+    "offset": [
+      128,
+      32,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2950
+  },
+  {
+    "file": "castle_4_1_6.nbt",
+    "offset": [
+      128,
+      32,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_1_7.nbt",
+    "offset": [
+      128,
+      32,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_1_8.nbt",
+    "offset": [
+      128,
+      32,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_2_0.nbt",
+    "offset": [
+      128,
+      64,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 378
+  },
+  {
+    "file": "castle_4_2_1.nbt",
+    "offset": [
+      128,
+      64,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 3646
+  },
+  {
+    "file": "castle_4_2_2.nbt",
+    "offset": [
+      128,
+      64,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 5364
+  },
+  {
+    "file": "castle_4_2_3.nbt",
+    "offset": [
+      128,
+      64,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 6419
+  },
+  {
+    "file": "castle_4_2_4.nbt",
+    "offset": [
+      128,
+      64,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 2614
+  },
+  {
+    "file": "castle_4_2_5.nbt",
+    "offset": [
+      128,
+      64,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 9
+  },
+  {
+    "file": "castle_4_2_6.nbt",
+    "offset": [
+      128,
+      64,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_2_7.nbt",
+    "offset": [
+      128,
+      64,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_2_8.nbt",
+    "offset": [
+      128,
+      64,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_3_0.nbt",
+    "offset": [
+      128,
+      96,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_3_1.nbt",
+    "offset": [
+      128,
+      96,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 412
+  },
+  {
+    "file": "castle_4_3_2.nbt",
+    "offset": [
+      128,
+      96,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1881
+  },
+  {
+    "file": "castle_4_3_3.nbt",
+    "offset": [
+      128,
+      96,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 1123
+  },
+  {
+    "file": "castle_4_3_4.nbt",
+    "offset": [
+      128,
+      96,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 13
+  },
+  {
+    "file": "castle_4_3_5.nbt",
+    "offset": [
+      128,
+      96,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_3_6.nbt",
+    "offset": [
+      128,
+      96,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_3_7.nbt",
+    "offset": [
+      128,
+      96,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_3_8.nbt",
+    "offset": [
+      128,
+      96,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_0.nbt",
+    "offset": [
+      128,
+      128,
+      0
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_1.nbt",
+    "offset": [
+      128,
+      128,
+      32
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_2.nbt",
+    "offset": [
+      128,
+      128,
+      64
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_3.nbt",
+    "offset": [
+      128,
+      128,
+      96
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_4.nbt",
+    "offset": [
+      128,
+      128,
+      128
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_5.nbt",
+    "offset": [
+      128,
+      128,
+      160
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_6.nbt",
+    "offset": [
+      128,
+      128,
+      192
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_7.nbt",
+    "offset": [
+      128,
+      128,
+      224
+    ],
+    "size": [
+      32,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_4_8.nbt",
+    "offset": [
+      128,
+      128,
+      256
+    ],
+    "size": [
+      32,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_0.nbt",
+    "offset": [
+      128,
+      160,
+      0
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_1.nbt",
+    "offset": [
+      128,
+      160,
+      32
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_2.nbt",
+    "offset": [
+      128,
+      160,
+      64
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_3.nbt",
+    "offset": [
+      128,
+      160,
+      96
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_4.nbt",
+    "offset": [
+      128,
+      160,
+      128
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_5.nbt",
+    "offset": [
+      128,
+      160,
+      160
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_6.nbt",
+    "offset": [
+      128,
+      160,
+      192
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_7.nbt",
+    "offset": [
+      128,
+      160,
+      224
+    ],
+    "size": [
+      32,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_4_5_8.nbt",
+    "offset": [
+      128,
+      160,
+      256
+    ],
+    "size": [
+      32,
+      10,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_0_0.nbt",
+    "offset": [
+      160,
+      0,
+      0
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_0_1.nbt",
+    "offset": [
+      160,
+      0,
+      32
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 3048
+  },
+  {
+    "file": "castle_5_0_2.nbt",
+    "offset": [
+      160,
+      0,
+      64
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 3685
+  },
+  {
+    "file": "castle_5_0_3.nbt",
+    "offset": [
+      160,
+      0,
+      96
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 3852
+  },
+  {
+    "file": "castle_5_0_4.nbt",
+    "offset": [
+      160,
+      0,
+      128
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 3588
+  },
+  {
+    "file": "castle_5_0_5.nbt",
+    "offset": [
+      160,
+      0,
+      160
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 2083
+  },
+  {
+    "file": "castle_5_0_6.nbt",
+    "offset": [
+      160,
+      0,
+      192
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_0_7.nbt",
+    "offset": [
+      160,
+      0,
+      224
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_0_8.nbt",
+    "offset": [
+      160,
+      0,
+      256
+    ],
+    "size": [
+      29,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_1_0.nbt",
+    "offset": [
+      160,
+      32,
+      0
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 558
+  },
+  {
+    "file": "castle_5_1_1.nbt",
+    "offset": [
+      160,
+      32,
+      32
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 4343
+  },
+  {
+    "file": "castle_5_1_2.nbt",
+    "offset": [
+      160,
+      32,
+      64
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 5746
+  },
+  {
+    "file": "castle_5_1_3.nbt",
+    "offset": [
+      160,
+      32,
+      96
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 6552
+  },
+  {
+    "file": "castle_5_1_4.nbt",
+    "offset": [
+      160,
+      32,
+      128
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 5450
+  },
+  {
+    "file": "castle_5_1_5.nbt",
+    "offset": [
+      160,
+      32,
+      160
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 833
+  },
+  {
+    "file": "castle_5_1_6.nbt",
+    "offset": [
+      160,
+      32,
+      192
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_1_7.nbt",
+    "offset": [
+      160,
+      32,
+      224
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_1_8.nbt",
+    "offset": [
+      160,
+      32,
+      256
+    ],
+    "size": [
+      29,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_2_0.nbt",
+    "offset": [
+      160,
+      64,
+      0
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 36
+  },
+  {
+    "file": "castle_5_2_1.nbt",
+    "offset": [
+      160,
+      64,
+      32
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 240
+  },
+  {
+    "file": "castle_5_2_2.nbt",
+    "offset": [
+      160,
+      64,
+      64
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 1717
+  },
+  {
+    "file": "castle_5_2_3.nbt",
+    "offset": [
+      160,
+      64,
+      96
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 1417
+  },
+  {
+    "file": "castle_5_2_4.nbt",
+    "offset": [
+      160,
+      64,
+      128
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 1126
+  },
+  {
+    "file": "castle_5_2_5.nbt",
+    "offset": [
+      160,
+      64,
+      160
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_2_6.nbt",
+    "offset": [
+      160,
+      64,
+      192
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_2_7.nbt",
+    "offset": [
+      160,
+      64,
+      224
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_2_8.nbt",
+    "offset": [
+      160,
+      64,
+      256
+    ],
+    "size": [
+      29,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_0.nbt",
+    "offset": [
+      160,
+      96,
+      0
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_1.nbt",
+    "offset": [
+      160,
+      96,
+      32
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_2.nbt",
+    "offset": [
+      160,
+      96,
+      64
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 889
+  },
+  {
+    "file": "castle_5_3_3.nbt",
+    "offset": [
+      160,
+      96,
+      96
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 183
+  },
+  {
+    "file": "castle_5_3_4.nbt",
+    "offset": [
+      160,
+      96,
+      128
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_5.nbt",
+    "offset": [
+      160,
+      96,
+      160
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_6.nbt",
+    "offset": [
+      160,
+      96,
+      192
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_7.nbt",
+    "offset": [
+      160,
+      96,
+      224
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_3_8.nbt",
+    "offset": [
+      160,
+      96,
+      256
+    ],
+    "size": [
+      29,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_0.nbt",
+    "offset": [
+      160,
+      128,
+      0
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_1.nbt",
+    "offset": [
+      160,
+      128,
+      32
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_2.nbt",
+    "offset": [
+      160,
+      128,
+      64
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_3.nbt",
+    "offset": [
+      160,
+      128,
+      96
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_4.nbt",
+    "offset": [
+      160,
+      128,
+      128
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_5.nbt",
+    "offset": [
+      160,
+      128,
+      160
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_6.nbt",
+    "offset": [
+      160,
+      128,
+      192
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_7.nbt",
+    "offset": [
+      160,
+      128,
+      224
+    ],
+    "size": [
+      29,
+      32,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_4_8.nbt",
+    "offset": [
+      160,
+      128,
+      256
+    ],
+    "size": [
+      29,
+      32,
+      10
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_0.nbt",
+    "offset": [
+      160,
+      160,
+      0
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_1.nbt",
+    "offset": [
+      160,
+      160,
+      32
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_2.nbt",
+    "offset": [
+      160,
+      160,
+      64
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_3.nbt",
+    "offset": [
+      160,
+      160,
+      96
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_4.nbt",
+    "offset": [
+      160,
+      160,
+      128
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_5.nbt",
+    "offset": [
+      160,
+      160,
+      160
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_6.nbt",
+    "offset": [
+      160,
+      160,
+      192
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_7.nbt",
+    "offset": [
+      160,
+      160,
+      224
+    ],
+    "size": [
+      29,
+      10,
+      32
+    ],
+    "solidBlocks": 0
+  },
+  {
+    "file": "castle_5_5_8.nbt",
+    "offset": [
+      160,
+      160,
+      256
+    ],
+    "size": [
+      29,
+      10,
+      10
+    ],
+    "solidBlocks": 0
+  }
+]

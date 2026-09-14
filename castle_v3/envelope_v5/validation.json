@@ -1,0 +1,27 @@
+{
+  "totalBlocks": 518687,
+  "size": [
+    189,
+    170,
+    266
+  ],
+  "designMin": [
+    -90,
+    -48,
+    -84
+  ],
+  "designMax": [
+    98,
+    121,
+    181
+  ],
+  "changedFromV4": 20013,
+  "v4CoordinatesPreserved": 16950,
+  "musicBlocks": 32260,
+  "noteBlocks": 2307,
+  "routes": 35,
+  "target": "26.3-snapshot-9",
+  "newNBT": false,
+  "inGameTest": false,
+  "browserTest": false
+}

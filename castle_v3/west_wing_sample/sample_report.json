@@ -1,0 +1,45 @@
+{
+  "size": [
+    52,
+    66,
+    98
+  ],
+  "designMin": [
+    -62,
+    -13,
+    -18
+  ],
+  "designMax": [
+    -11,
+    52,
+    79
+  ],
+  "offset": [
+    62,
+    13,
+    18
+  ],
+  "totalBlocks": 26989,
+  "materials": {
+    "stone_bricks": 21527,
+    "polished_andesite": 391,
+    "mossy_stone_bricks": 310,
+    "chiseled_stone_bricks": 10,
+    "lantern": 8,
+    "andesite": 386,
+    "stone_brick_wall": 317,
+    "stone_brick_stairs": 282,
+    "deepslate_brick_slab": 889,
+    "deepslate_tiles": 373,
+    "spruce_planks": 656,
+    "iron_bars": 230,
+    "deepslate_tile_stairs": 1365,
+    "spruce_log": 129,
+    "spruce_slab": 22,
+    "bookshelf": 81,
+    "spruce_stairs": 2,
+    "ladder": 11
+  },
+  "routeCount": 8,
+  "status": "西翼样板；静态三格净高与三格路幅检查通过，尚未在Minecraft实走。不是完整城堡，也不含音乐机。"
+}

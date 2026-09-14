@@ -1,0 +1,83 @@
+{
+  "totalBlocks": 528573,
+  "items": 528572,
+  "itemKinds": 88,
+  "newCoordinates": 1881,
+  "oldV19BlocksUnchanged": true,
+  "musicStatesPreserved": 32260,
+  "noteBlocks": 2307,
+  "oldRoutesPreserved": 53,
+  "gateStatesPreserved": 6,
+  "oldFeaturesPreserved": 159,
+  "newFeatures": 11,
+  "totalLights": 543,
+  "oldRouteLighting": {
+    "before": {
+      "samples": 6722,
+      "minimum": 3,
+      "mean": 9.47,
+      "zero": 0
+    },
+    "after": {
+      "samples": 6722,
+      "minimum": 3,
+      "mean": 9.47,
+      "zero": 0
+    },
+    "newRoutes": [],
+    "dimmerSamples": []
+  },
+  "constructionPages": 13957,
+  "pageCoverageExact": true,
+  "attachmentDependenciesChecked": 9585,
+  "targetStatesParsed": 292,
+  "target": "26.3-snapshot-9",
+  "NBTFiles": 324,
+  "allAirTiles": 164,
+  "airInclusiveCells": 8578710,
+  "airCells": 8050137,
+  "completeHTMLMatchesSavedModel": true,
+  "DOMStubTest": true,
+  "browserTest": false,
+  "inGameTest": false,
+  "images": [
+    {
+      "file": "01_完整转角对照.png",
+      "size": [
+        3200,
+        2350
+      ],
+      "sha256": "ff937f2cbefe473a4cf6d3944a239f2957bf4eb5b4e03202ab32a7ed50a4b365"
+    },
+    {
+      "file": "02_东城墙扶垛.png",
+      "size": [
+        2800,
+        1550
+      ],
+      "sha256": "7cbb0066bd453d14d6c6f433b9c223e44d2892b904e51022360cc4d8d6a8867e"
+    },
+    {
+      "file": "03_长廊凸窗.png",
+      "size": [
+        2800,
+        1750
+      ],
+      "sha256": "5996cb3e7cc184b5f1dbcc2045a51d4be086bbca3550d27bbad78464159fb6dc"
+    },
+    {
+      "file": "04_全堡总览.png",
+      "size": [
+        2600,
+        2200
+      ],
+      "sha256": "8311f12fe3c51246699b8445efc0775af87622d723858ab35a01f06bec4c2957"
+    }
+  ],
+  "limitations": [
+    "图片是原版模型离线渲染，不是游戏截图。",
+    "静态支撑和电路检查不是全玩家动力学、全曲试听或真实光照验收。",
+    "NBT含空气，不能直接覆盖朋友服务器。",
+    "施工进度只是用户自行勾选，无游戏状态检测或多人自动同步。"
+  ]
+}

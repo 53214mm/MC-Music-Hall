@@ -1,0 +1,164 @@
+[
+  {
+    "file": "hall_00_00_00.nbt",
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "blocks": 6692
+  },
+  {
+    "file": "hall_00_00_01.nbt",
+    "offset": [
+      0,
+      0,
+      32
+    ],
+    "blocks": 7398
+  },
+  {
+    "file": "hall_00_00_02.nbt",
+    "offset": [
+      0,
+      0,
+      64
+    ],
+    "blocks": 2279
+  },
+  {
+    "file": "hall_00_01_00.nbt",
+    "offset": [
+      0,
+      32,
+      0
+    ],
+    "blocks": 5681
+  },
+  {
+    "file": "hall_00_01_01.nbt",
+    "offset": [
+      0,
+      32,
+      32
+    ],
+    "blocks": 5177
+  },
+  {
+    "file": "hall_00_01_02.nbt",
+    "offset": [
+      0,
+      32,
+      64
+    ],
+    "blocks": 1474
+  },
+  {
+    "file": "hall_00_02_00.nbt",
+    "offset": [
+      0,
+      64,
+      0
+    ],
+    "blocks": 1500
+  },
+  {
+    "file": "hall_00_02_01.nbt",
+    "offset": [
+      0,
+      64,
+      32
+    ],
+    "blocks": 1559
+  },
+  {
+    "file": "hall_00_02_02.nbt",
+    "offset": [
+      0,
+      64,
+      64
+    ],
+    "blocks": 700
+  },
+  {
+    "file": "hall_01_00_00.nbt",
+    "offset": [
+      32,
+      0,
+      0
+    ],
+    "blocks": 5510
+  },
+  {
+    "file": "hall_01_00_01.nbt",
+    "offset": [
+      32,
+      0,
+      32
+    ],
+    "blocks": 5789
+  },
+  {
+    "file": "hall_01_00_02.nbt",
+    "offset": [
+      32,
+      0,
+      64
+    ],
+    "blocks": 1911
+  },
+  {
+    "file": "hall_01_01_00.nbt",
+    "offset": [
+      32,
+      32,
+      0
+    ],
+    "blocks": 4626
+  },
+  {
+    "file": "hall_01_01_01.nbt",
+    "offset": [
+      32,
+      32,
+      32
+    ],
+    "blocks": 4259
+  },
+  {
+    "file": "hall_01_01_02.nbt",
+    "offset": [
+      32,
+      32,
+      64
+    ],
+    "blocks": 1253
+  },
+  {
+    "file": "hall_01_02_00.nbt",
+    "offset": [
+      32,
+      64,
+      0
+    ],
+    "blocks": 1280
+  },
+  {
+    "file": "hall_01_02_01.nbt",
+    "offset": [
+      32,
+      64,
+      32
+    ],
+    "blocks": 1322
+  },
+  {
+    "file": "hall_01_02_02.nbt",
+    "offset": [
+      32,
+      64,
+      64
+    ],
+    "blocks": 580
+  }
+]

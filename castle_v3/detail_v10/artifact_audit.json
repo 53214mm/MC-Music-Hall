@@ -1,0 +1,67 @@
+{
+  "fullModelBlocks": 520522,
+  "exactChangedCoordinates": 5782,
+  "featuresVerified": 46,
+  "deferredRegionsUnchanged": 2,
+  "terrainAndMusicUnchanged": true,
+  "V9GroundEditsPreserved": 14342,
+  "routesVerified": 35,
+  "lightSourcesUnchanged": 471,
+  "sourceHashesVerified": 16,
+  "exactViewerNeighborhoodBlocks": 48144,
+  "localReferencesChecked": 13,
+  "uniqueDOMIds": 23,
+  "images": [
+    {
+      "file": "01_整堡南东形状对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "413e66207763694741822626aab415ee90f2ea34ce929317a1308f10f2e5372d"
+    },
+    {
+      "file": "02_整堡西南形状对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "592fd5548b334fe0ab3647306cd2a61d43e92cdb473b28313af062d78cece5cb"
+    },
+    {
+      "file": "03_长墙拱龛近景.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "e48dda30bd2efa30fec1281412a1ebfd813414c0d00da324c0ef4e4aa089d274"
+    },
+    {
+      "file": "04_塔窗薄框近景.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "6167e2f9273bd4b52c9b8968b97706de1b9275c8ee6ba34cf2180bdeb4ae74a6"
+    },
+    {
+      "file": "05_维修翼檐口近景.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "0e454f366a1ff925ada8a11922201292a39a37afd4a55d5d48081c020ccb0caa"
+    },
+    {
+      "file": "06_西翼山墙收边近景.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "51acbd79f5f1a679f555bd6f95f7cd30b5f56dfa71e4e8bcf74a952cae8891f6"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

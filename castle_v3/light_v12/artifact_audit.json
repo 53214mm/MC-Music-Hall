@@ -1,0 +1,61 @@
+{
+  "fullModelBlocks": 520591,
+  "addedBlocks": 30,
+  "oldBlocksExactlyPreserved": 520561,
+  "musicHaloPreserved": true,
+  "exactMusicExceptionCells": 22,
+  "musicSeparations": [
+    2,
+    2,
+    3
+  ],
+  "routesVerified": 35,
+  "newSupportedFixtures": 7,
+  "finalLightSources": 508,
+  "routeProxySamples": 6331,
+  "previousZeroSamples": 28,
+  "remainingZeroSamples": 0,
+  "remainingBelow5": 24,
+  "dimmerSamples": 0,
+  "sourceHashesVerified": 18,
+  "exactViewerNeighborhoodBlocks": 317,
+  "localReferencesChecked": 13,
+  "uniqueDOMIds": 18,
+  "images": [
+    {
+      "file": "01_试听走廊梁下灯.png",
+      "size": [
+        2600,
+        1220
+      ],
+      "sha256": "882da6c89bb1689d069c5fe38b5064316dc623deca90dc756e008fd4f704720e"
+    },
+    {
+      "file": "02_前庭落差端柱灯.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "f9248a09fa41f31d31b20cdde3f533f4f134325b653dbb82aebde95ca1bc4daa"
+    },
+    {
+      "file": "03_南入口坡道双灯.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "443d9d2471f5703efe9b1e8d1c3c71f3a8efbf16e19450d24634e7f95bfe3c6f"
+    },
+    {
+      "file": "04_照明采样对照_非游戏实测.png",
+      "size": [
+        2400,
+        1360
+      ],
+      "sha256": "4117f25b7d1b17e8987ff23cae80616055d8b94eaae26462d507820e752b47d6"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

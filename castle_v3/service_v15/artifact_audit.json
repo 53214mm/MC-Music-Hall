@@ -1,0 +1,83 @@
+{
+  "totalBlocks": 521025,
+  "changedCoordinates": 742,
+  "added": 507,
+  "removed": 207,
+  "replaced": 28,
+  "musicPreserved": 32260,
+  "noteBlocks": 2307,
+  "oldRoutesPreserved": 43,
+  "oldShortcutsPreserved": 2,
+  "newGatedRoute": 1,
+  "ordinaryGraphSteps": 77,
+  "shortcutGraphSteps": 53,
+  "stairBlocks": 45,
+  "maxHalfCellRiser": 0.5,
+  "closedCollisionCells": [
+    [
+      55,
+      3,
+      32
+    ]
+  ],
+  "openedCollisionCells": [],
+  "openHoldIdempotent": true,
+  "closeRestoresExactModel": true,
+  "controlSweepClear": true,
+  "designatedClosedApproachReachLowerBound": 6.3,
+  "faceConnectedNewStructuralParts": 516,
+  "minimumMusicChebyshev": 12,
+  "foreignResponsiveParts": 0,
+  "newArchitecturalLights": 6,
+  "totalArchitecturalLights": 518,
+  "oldRouteDimmerSamples": 0,
+  "newRouteLight": {
+    "samples": 160,
+    "minimum": 5,
+    "mean": 9.85,
+    "zero": 0
+  },
+  "exactViewerNeighborhoodBlocks": 7131,
+  "sourceHashesVerified": 13,
+  "images": [
+    {
+      "file": "01_上下层路线与剖面.png",
+      "size": [
+        2500,
+        1800
+      ],
+      "sha256": "a430ec0504853e01dc99dc4320ad834f82c9217edb3134bb6f1077c6ac4a321a"
+    },
+    {
+      "file": "02_石闩开关与控制位.png",
+      "size": [
+        2500,
+        1700
+      ],
+      "sha256": "6cf7a0a86dea7c8849cf7959652a6eea36bbdf48b939ae0ddd1ae7c12c91c7f6"
+    },
+    {
+      "file": "03_反相接线坐标.png",
+      "size": [
+        2600,
+        1600
+      ],
+      "sha256": "b8820d8b569a6462157bf617a2f5dc8359058c4e3d87655144d42dda9c8a8fda"
+    },
+    {
+      "file": "04_雨棚与暖灯细部.png",
+      "size": [
+        2600,
+        1600
+      ],
+      "sha256": "6ec859e48bb6534f0ec976510d92148c42dd9352e58a59249baee9aca325d96d"
+    }
+  ],
+  "referencesChecked": 15,
+  "uniqueDOMIds": 16,
+  "staticArtifactCheck": true,
+  "fullStairDynamics": false,
+  "browserTest": false,
+  "inGameTest": false,
+  "newNBT": false
+}

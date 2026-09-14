@@ -1,0 +1,10 @@
+{
+  "changedCoordinates": 16950,
+  "beforeSampleBlocks": 24182,
+  "afterSampleBlocks": 31064,
+  "unchangedMusicBlocks": 32260,
+  "staticRoutes": 35,
+  "target": "26.3-snapshot-9",
+  "browserVisualTest": false,
+  "inGameTest": false
+}

@@ -1,0 +1,70 @@
+{
+  "fullModelBlocks": 520561,
+  "exactChangedCoordinates": 178,
+  "resolvedV10Windows": 2,
+  "newSupportedFixtures": 30,
+  "oldLightsPreserved": 471,
+  "finalLightSources": 501,
+  "routesVerified": 35,
+  "routeProxySamples": 6331,
+  "routeProxyDimmer": 0,
+  "zeroProxySamplesToCheck": 28,
+  "musicProtectionZeroSamples": 25,
+  "sourceHashesVerified": 17,
+  "exactViewerNeighborhoodBlocks": 3293,
+  "localReferencesChecked": 14,
+  "uniqueDOMIds": 22,
+  "images": [
+    {
+      "file": "01_整堡南东窗廊对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "4e7d48300cd98fdbea098c88811fe87e47a5cbd9c7d777ed58b9c3d5e3a3f77e"
+    },
+    {
+      "file": "02_整堡西南窗廊对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "ec0508ffa406a20925ba1b3db22c7ce573239db3f6543f2717c4627aa7b4a254"
+    },
+    {
+      "file": "03_烽塔平台窗廊.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "c335238e3295464019965d1d2783046e7352b56d06ebb233f3a90f4123bc2383"
+    },
+    {
+      "file": "04_维修塔低拱窗.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "5498f68f14675af99a4f95cc469d1f2c3196c1b611da94ab1001b047420bb5dc"
+    },
+    {
+      "file": "05_长墙拱龛挂灯.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "592051fda855bcfddfc2524e7eb9c06466731fa696ae7f264aec7149b816e06f"
+    },
+    {
+      "file": "06_拱龛照明剖面_非游戏实测.png",
+      "size": [
+        2200,
+        1360
+      ],
+      "sha256": "83433b3c556d6da9e3bb81899f09870c0dc5bea63289c9a4f7364532018010be"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

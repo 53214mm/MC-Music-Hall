@@ -1,0 +1,16 @@
+{
+  "before": {
+    "samples": 6722,
+    "minimum": 3,
+    "mean": 9.47,
+    "zero": 0
+  },
+  "after": {
+    "samples": 6722,
+    "minimum": 3,
+    "mean": 9.47,
+    "zero": 0
+  },
+  "newRoutes": [],
+  "dimmerSamples": []
+}

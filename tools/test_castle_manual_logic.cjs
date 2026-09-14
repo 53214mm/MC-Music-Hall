@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict'),M=require('./castle_manual_logic.cjs');
+const s=(n,p={})=>[n,p,'shell'];const get=()=>s('stone');
+assert.ok(M.instructions(s('repeater',{facing:'east',delay:'4'}),[0,0,0],get,{}).join(' ').includes('向西'));
+assert.ok(M.instructions(s('repeater',{facing:'east',delay:'4'}),[0,0,0],get,{}).join(' ').includes('右击3次'));
+assert.ok(M.instructions(s('smooth_sandstone_stairs',{facing:'north',half:'top'}),[0,0,0],get,{}).join(' ').includes('倒置'));
+assert.ok(M.instructions(s('smooth_sandstone_slab',{type:'top'}),[0,0,0],get,{}).join(' ').includes('上半'));
+assert.ok(M.instructions(s('note_block',{note:'22',instrument:'harp'}),[0,0,0],get,{}).join(' ').includes('右击22次'));
+assert.ok(M.instructions(s('piston_head'),[55,4,32],get,{}).join(' ').includes('不要手放'));
+assert.ok(M.instructions(s('chiseled_sandstone'),[55,3,32],get,{}).join(' ').includes('(55,4,32)'));
+assert.ok(M.instructions(s('iron_door',{half:'upper'}),[0,0,0],get,{}).join(' ').includes('自动生成'));
+assert.ok(M.instructions(s('grindstone',{face:'ceiling',facing:'west'}),[0,0,0],get,{}).join(' ').includes('天花板倒挂'));
+assert.deepEqual(M.cost(s('piston_head')),{});assert.deepEqual(M.cost(s('potted_oxeye_daisy')),{flower_pot:1,oxeye_daisy:1});
+const ctx={hash:'abc',origin:[1,2,3],ids:new Set(['0:0:0:0'])};const good={version:1,modelHash:'abc',origin:[1,2,3],done:['0:0:0:0']};
+assert.deepEqual(M.validateProgress(good,ctx),['0:0:0:0']);
+for(const bad of [{...good,modelHash:'old'},{...good,origin:[0,0,0]},{...good,done:['bogus']},{...good,done:['0:0:0:0','0:0:0:0']},{...good,version:9}])assert.throws(()=>M.validateProgress(bad,ctx));
+console.log('Manual rules: orientation, note tuning, automatic parts, S3 exception, materials and version/origin-bound progress passed.');

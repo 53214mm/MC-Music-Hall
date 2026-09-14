@@ -1,0 +1,45 @@
+{
+  "fullModelBlocks": 518511,
+  "exactChangedCoordinates": 83733,
+  "coordinateAndPropertiesUnchanged": true,
+  "sourceHashesVerified": 14,
+  "localReferencesChecked": 10,
+  "uniqueDOMIds": 14,
+  "images": [
+    {
+      "file": "01_整堡南东配色对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "477010e6b2cb01ed1863da20f24567aa5d14851e4b4a1bf36d21db804a17842f"
+    },
+    {
+      "file": "02_整堡西南配色对照.png",
+      "size": [
+        2400,
+        1560
+      ],
+      "sha256": "b9516a71dc361bb5b65b7af112c8401a91de1acfe8df31ff8c0acd2d42fcafcb"
+    },
+    {
+      "file": "03_主堡窗墙配色近景.png",
+      "size": [
+        2000,
+        1360
+      ],
+      "sha256": "9ba6547db4c2b676bc916d485413734e944f096f636cf70e65f2fe945e77176f"
+    },
+    {
+      "file": "04_长墙塔身配色近景.png",
+      "size": [
+        2000,
+        1360
+      ],
+      "sha256": "6665fd13d141ff5928db6efac07b2deb2fefd0b92f80f1a463581ba8cd21abf6"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

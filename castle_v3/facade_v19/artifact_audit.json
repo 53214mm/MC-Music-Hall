@@ -1,0 +1,95 @@
+{
+  "totalBlocks": 526692,
+  "changedCoordinates": 6340,
+  "sourceHash": "4c4d4dbdd5be8a14de2312becf0e042977103c83e9ceb09941ea3ce9c46bb85f",
+  "unchangedV18ZipHash": "87641143c5662ace97a96bcf6629a2aaa88e3bdca761d07ec273e04e79e32bbf",
+  "sourceHashesVerified": 15,
+  "musicPreserved": 32260,
+  "noteBlocks": 2307,
+  "oldFeaturesPreserved": 142,
+  "oldRoutesPreserved": 53,
+  "gatedRoutesPreserved": 3,
+  "sightlinesPreserved": 2,
+  "newFeatures": 17,
+  "faceAnchoredComponents": 11,
+  "roofJoinCells": 511,
+  "blindBackingCells": 357,
+  "oldLightsPreserved": 539,
+  "newLights": 2,
+  "totalLights": 541,
+  "oldRouteLighting": {
+    "before": {
+      "samples": 6722,
+      "minimum": 3,
+      "mean": 9.47,
+      "zero": 0
+    },
+    "after": {
+      "samples": 6722,
+      "minimum": 3,
+      "mean": 9.47,
+      "zero": 0
+    },
+    "newRoutes": [],
+    "dimmerSamples": []
+  },
+  "changedStatesParsed": 29,
+  "placeItems": 6164,
+  "dismantleItems": 917,
+  "viewerBlocks": 24534,
+  "images": [
+    {
+      "file": "01_北东转角前后.png",
+      "size": [
+        3200,
+        2250
+      ],
+      "sha256": "213f109b1eb379d0c50b54870e16fec4d20f44fb5ef4c9745c57eb247b9052d4"
+    },
+    {
+      "file": "02_北墙正面前后.png",
+      "size": [
+        3200,
+        2100
+      ],
+      "sha256": "08c441d47210c4e512ea4714f776834397cfc559556b8a386cc22c0e1f8f5348"
+    },
+    {
+      "file": "03_山墙接坡前后.png",
+      "size": [
+        3000,
+        1800
+      ],
+      "sha256": "5fe33feae1754c6c1449bf9aed37d88b16664ca3247ef3f83c13dc41b0b568db"
+    },
+    {
+      "file": "04_东侧扶壁前后.png",
+      "size": [
+        2900,
+        1900
+      ],
+      "sha256": "b1b963705b11cf6af1dd8afce8b2fb928faabddd7f8ca1f030234b53fd810dc7"
+    },
+    {
+      "file": "05_整堡同角度前后.png",
+      "size": [
+        3200,
+        2200
+      ],
+      "sha256": "e27a1c71d2142ff848969403b3ce96e0b2f7ac80883b4b8ea37b63349b3dc211"
+    },
+    {
+      "file": "06_盲拱退深与细部.png",
+      "size": [
+        2800,
+        1700
+      ],
+      "sha256": "865fcbb229e4d180b0a1dd242b1a2836560558a47e62ebd76ac06cb835f04c70"
+    }
+  ],
+  "staticArtifactCheck": true,
+  "fullStairDynamics": false,
+  "browserTest": false,
+  "inGameTest": false,
+  "newNBT": false
+}

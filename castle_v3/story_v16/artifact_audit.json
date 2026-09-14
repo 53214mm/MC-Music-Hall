@@ -1,0 +1,87 @@
+{
+  "totalBlocks": 521219,
+  "changedCoordinates": 274,
+  "added": 219,
+  "removed": 25,
+  "replaced": 30,
+  "musicPreserved": 32260,
+  "noteBlocks": 2307,
+  "oldOrdinaryRoutesPreserved": 43,
+  "oldGatedRoutesPreserved": 3,
+  "newRoutes": 5,
+  "newRoutesSweepClear": true,
+  "newFeatures": 12,
+  "floorBackedRailOpenings": 8,
+  "existingRailStateChanges": 17,
+  "stateOnlyCoordinates": 22,
+  "newMezzaninePlanks": 49,
+  "newArchitecturalLights": 10,
+  "totalArchitecturalLights": 528,
+  "oldRouteDimmerSamples": 0,
+  "newRouteMinimumLight": [
+    6,
+    10,
+    8,
+    9,
+    9
+  ],
+  "exactViewerNeighborhoodBlocks": 1727,
+  "sourceHashesVerified": 13,
+  "modelStatesChecked": 185,
+  "images": [
+    {
+      "file": "01_唱诗堂长席对照.png",
+      "size": [
+        2800,
+        2050
+      ],
+      "sha256": "8264035a868a272b935dcf2538ff737f886ed7eddbbdce1ae72544ff080cdcfe"
+    },
+    {
+      "file": "02_薄背长席细部.png",
+      "size": [
+        2600,
+        1600
+      ],
+      "sha256": "4a3f1885b9211485207dfd92a3ed6898b50557317f457c8f1fab0ecc4cdf22be"
+    },
+    {
+      "file": "03_侧后殿纪念龛.png",
+      "size": [
+        2500,
+        1800
+      ],
+      "sha256": "0e8d62e474d2cedf6790d01c854e35d8c174f79a4d2fb8010d91eb6ec4f8d2aa"
+    },
+    {
+      "file": "04_维修工台对照.png",
+      "size": [
+        2700,
+        1750
+      ],
+      "sha256": "743de5f3fd4b7e855c9cd15f3ac7d06d1ff095b26bf11ba71a6a8e2f2ef363c3"
+    },
+    {
+      "file": "05_夹廊支撑与零件架.png",
+      "size": [
+        2700,
+        1900
+      ],
+      "sha256": "d4556bd14b75fe9637e7ffda17c8dea7496d1bde7c791d0439b67ef32a175d69"
+    },
+    {
+      "file": "06_两处室内通路.png",
+      "size": [
+        2700,
+        1800
+      ],
+      "sha256": "04d31f459b8e5f4ff7620751155375921420e8f4defbb1807e7923d5a2f78fd3"
+    }
+  ],
+  "referencesChecked": 16,
+  "uniqueDOMIds": 14,
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false,
+  "newNBT": false
+}

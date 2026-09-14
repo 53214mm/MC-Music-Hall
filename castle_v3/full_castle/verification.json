@@ -1,0 +1,14 @@
+{
+  "totalBlocks": 500843,
+  "noteBlocks": 2307,
+  "tiles": 324,
+  "cellsIncludingAir": 8546580,
+  "preservedGateWestBlocks": 26989,
+  "relocatedMusicBlocks": 32260,
+  "materials": 34,
+  "routes": 32,
+  "blockedRoutes": 5,
+  "targetVersion": "26.3-snapshot-9",
+  "dataVersion": 5011,
+  "result": "分块坐标、方块状态与空气精确回读一致；旧门楼西翼实体全部保留；平移后音乐机与原机逐格对应；目标版本方块 ID 全部存在。未进行游戏内行走、光照、刷怪、防跌落与完整试听验收。"
+}

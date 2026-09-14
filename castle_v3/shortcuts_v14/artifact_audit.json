@@ -1,0 +1,510 @@
+{
+  "totalBlocks": 520725,
+  "changedCoordinates": 54,
+  "added": 37,
+  "replaced": 17,
+  "musicPreserved": 32260,
+  "noteBlocks": 2307,
+  "oldRoutesPreserved": 40,
+  "accessRoutesVerified": 3,
+  "gatedRoutesVerified": 2,
+  "circuitChecks": [
+    {
+      "id": "S1",
+      "closedCollisionCells": [
+        [
+          -31,
+          1,
+          60
+        ],
+        [
+          -31,
+          2,
+          60
+        ]
+      ],
+      "openSweptCollisionCells": [],
+      "reclosedIdentical": true,
+      "ordinaryGraphSteps": 38,
+      "shortcutGraphSteps": 18,
+      "reachLowerBound": 7.3
+    },
+    {
+      "id": "S2",
+      "closedCollisionCells": [
+        [
+          -46,
+          33,
+          2
+        ]
+      ],
+      "openSweptCollisionCells": [],
+      "reclosedIdentical": true,
+      "ordinaryGraphSteps": 97,
+      "shortcutGraphSteps": 27,
+      "reachLowerBound": 5.4381
+    }
+  ],
+  "anchoredNewSolids": 24,
+  "minimumMusicChebyshev": 32,
+  "oldNearbyResponsiveParts": 0,
+  "newLights": 2,
+  "totalLights": 512,
+  "oldRouteDimmerSamples": 0,
+  "shortcutLightSamples": [
+    {
+      "id": "S1",
+      "before": {
+        "samples": 18,
+        "minimum": 2,
+        "mean": 6.28,
+        "zero": 0
+      },
+      "after": {
+        "samples": 18,
+        "minimum": 7,
+        "mean": 9.83,
+        "zero": 0
+      },
+      "excludedGateCells": [
+        [
+          -31,
+          1,
+          60
+        ],
+        [
+          -31,
+          2,
+          60
+        ]
+      ],
+      "samples": [
+        {
+          "pos": [
+            -31,
+            1,
+            56
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            57
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            58
+          ],
+          "value": 8
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            59
+          ],
+          "value": 7
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            61
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            62
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            63
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            64
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            65
+          ],
+          "value": 13
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            66
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            67
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            68
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            69
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            70
+          ],
+          "value": 8
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            71
+          ],
+          "value": 8
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            72
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            73
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -31,
+            1,
+            74
+          ],
+          "value": 11
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "before": {
+        "samples": 27,
+        "minimum": 6,
+        "mean": 9.85,
+        "zero": 0
+      },
+      "after": {
+        "samples": 27,
+        "minimum": 8,
+        "mean": 10.96,
+        "zero": 0
+      },
+      "excludedGateCells": [
+        [
+          -46,
+          33,
+          2
+        ]
+      ],
+      "samples": [
+        {
+          "pos": [
+            -46,
+            17,
+            2
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -46,
+            18,
+            2
+          ],
+          "value": 13
+        },
+        {
+          "pos": [
+            -46,
+            19,
+            2
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -46,
+            20,
+            2
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -46,
+            21,
+            2
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -46,
+            22,
+            2
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -46,
+            23,
+            2
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -46,
+            24,
+            2
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -46,
+            25,
+            2
+          ],
+          "value": 13
+        },
+        {
+          "pos": [
+            -46,
+            26,
+            2
+          ],
+          "value": 14
+        },
+        {
+          "pos": [
+            -46,
+            27,
+            2
+          ],
+          "value": 13
+        },
+        {
+          "pos": [
+            -46,
+            28,
+            2
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -46,
+            29,
+            2
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -46,
+            30,
+            2
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -46,
+            31,
+            2
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -46,
+            32,
+            2
+          ],
+          "value": 8
+        },
+        {
+          "pos": [
+            -45,
+            17,
+            2
+          ],
+          "value": 13
+        },
+        {
+          "pos": [
+            -45,
+            33,
+            2
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -44,
+            17,
+            2
+          ],
+          "value": 12
+        },
+        {
+          "pos": [
+            -44,
+            33,
+            2
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -43,
+            17,
+            2
+          ],
+          "value": 11
+        },
+        {
+          "pos": [
+            -43,
+            33,
+            2
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -42,
+            17,
+            2
+          ],
+          "value": 10
+        },
+        {
+          "pos": [
+            -41,
+            17,
+            2
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -40,
+            17,
+            0
+          ],
+          "value": 8
+        },
+        {
+          "pos": [
+            -40,
+            17,
+            1
+          ],
+          "value": 9
+        },
+        {
+          "pos": [
+            -40,
+            17,
+            2
+          ],
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "exactViewerNeighborhoodBlocks": 1418,
+  "sourceHashesVerified": 13,
+  "images": [
+    {
+      "file": "01_回廊门开关.png",
+      "size": [
+        2500,
+        1500
+      ],
+      "sha256": "02b79f32eeeef0b2378de30cccc149dbc157d7d26b77f0c8f33943fbc11d5c42"
+    },
+    {
+      "file": "02_梯口开关.png",
+      "size": [
+        2600,
+        1750
+      ],
+      "sha256": "b1afdcce15577846039375a94f5777e4e5d247749061010808a513044b1e73c6"
+    },
+    {
+      "file": "03_机关铺线坐标.png",
+      "size": [
+        2600,
+        1700
+      ],
+      "sha256": "0c4ea0aaa9bb4f4ecd3364a1ed1ae077183b2d37ef987b77b1403d900d51da49"
+    },
+    {
+      "file": "04_捷径补灯.png",
+      "size": [
+        2500,
+        1450
+      ],
+      "sha256": "3f6d5bf1cef94142f9ac487279ef262970273477203538c618787c26248df484"
+    }
+  ],
+  "referencesChecked": 15,
+  "uniqueDOMIds": 19,
+  "staticArtifactCheck": true,
+  "browserTest": false,
+  "inGameTest": false
+}

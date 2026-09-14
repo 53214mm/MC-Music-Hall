@@ -1,0 +1,8 @@
+# Construction JSON, HTML and package manifests contain byte-level SHA256s.
+# Preserve exact bytes on Windows as well as other platforms.
+* -text
+*.png binary
+*.zip binary
+*.nbt binary
+*.nbs binary
+*.mid binary

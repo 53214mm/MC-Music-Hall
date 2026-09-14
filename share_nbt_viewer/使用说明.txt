@@ -1,0 +1,26 @@
+NBT 逐层施工图查看器
+=====================
+
+最简单的用法：
+
+1. 安装 Python 3：https://www.python.org/downloads/
+   安装界面务必勾选“Add Python to PATH”。
+2. 把 nbt_structure_to_json.py 和 open-viewer.bat 放在同一个文件夹。
+3. 把 module_01.nbt（或其他 Java 版结构 NBT）拖到 open-viewer.bat 上。
+4. 程序会在 NBT 旁边生成 module_01_viewer.html，并自动用浏览器打开。
+5. 以后直接双击生成的 HTML 即可，不需要再次运行 Python，也不需要联网。
+
+命令行用法：
+
+py -3 nbt_structure_to_json.py module_01.nbt --html --open
+
+只转换为 JSON：
+
+py -3 nbt_structure_to_json.py module_01.nbt module_01.json
+
+注意：
+
+- 支持 Minecraft Java 版“结构方块”导出的 .nbt。
+- HTML 已包含全部结构数据，可以单独发送给其他人。
+- 网页中 Y=0 是最底层；X 向右，Z 向下。
+- 点击任意格子可查看坐标、方块属性、中继器档位和朝向。
