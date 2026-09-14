@@ -1,16 +1,18 @@
 # 余响堡 · Departures 红石音乐城堡
 
+[简体中文](README.md) · [English](README.en.md)
+
 当前完整版本：**V20**。将《Departures》编排为11段红石音乐模块，置于带教堂、回廊、塔楼与地下维修道的城堡中。目标游戏版本为 Minecraft Java **26.3-snapshot-9**。
 
 ## 先下载，再打开施工总册
 
-1. 下载 [V20完整施工包 ZIP](https://github.com/53214mm/MC-Music-Hall/raw/refs/heads/main/castle_v3/%E4%BD%99%E5%93%8D%E5%A0%A1_V20%E5%AE%8C%E6%95%B4%E6%96%BD%E5%B7%A5%E5%8C%85.zip)。
+1. 打开 [V20 Release 下载页](https://github.com/53214mm/MC-Music-Hall/releases/tag/v20.0.0)，下载附件 `余响堡_V20完整施工包.zip`，不是GitHub自动生成的“Source code”。
 2. **完整解压**，打开 `release_v20/余响堡_V20施工总册.html`。不要只下载HTML，四张配图须一起保留。
 3. 在“开始与定位”填写全队共用的世界原点，再进入第一阶段施工。
 
 查看和手建不需要安装Python，也不需要联网。GitHub文件页展示的是HTML源码，不是可操作的施工页面；请下载后用浏览器打开。
 
-总册目录按用途整理为：开始与定位、施工工作台、音乐与机关、材料与分工、验收与NBT。
+总册目录按用途整理为：开始与定位、施工工作台、音乐与机关、材料与分工、验收与NBT。README提供中英两版，施工总册界面仍为中文。Release附有ZIP的SHA256校验文件；[仓库内ZIP](castle_v3/余响堡_V20完整施工包.zip)也保留作备用入口。
 
 ## 施工图怎么用
 
